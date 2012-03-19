@@ -1,0 +1,10 @@
+build
+xcuserdata
+
+.DS_Store
+.svn
+
+*.pbxuser
+*.perspectivev3
+*.swp
+*.un~

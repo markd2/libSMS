@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D94CA20D13AA4B8D009A171D /* Build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D94CA20E13AA4B8D009A171D /* Build configuration list for PBXAggregateTarget "Build" */;
+			buildPhases = (
+				D94CA21113AA4B93009A171D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Build;
+			productName = UniversalBuild;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A71D20E9120CE2CC001F7032 /* SMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D20E7120CE2CC001F7032 /* SMSViewController.m */; };
+		A7243B8F122D7A370073EF5F /* SMSDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7243B8D122D7A370073EF5F /* SMSDrawingView.m */; };
+		A75C0C001226B595006AF630 /* SMSSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = A75C0BFE1226B595006AF630 /* SMSSecurity.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A777296F120A6E8800342ACB /* SMSHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A777296D120A6E8800342ACB /* SMSHTTPRequest.m */; };
+		A7772973120A6E9E00342ACB /* SMSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7772971120A6E9E00342ACB /* SMSAlertView.m */; };
+		A7A18C7E129944FE0089EB44 /* SMSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A18C7C129944FE0089EB44 /* SMSWebViewController.m */; };
+		A7E301B4122823D100B33670 /* SMSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E301B2122823D100B33670 /* SMSLoadingView.m */; };
+		A7E67FED121494750081D73E /* SMSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E67FEB121494750081D73E /* SMSTableViewController.m */; };
+		D9081E691367540600D80030 /* SMSCoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D1FA8120CD816001F7032 /* SMSCoreGraphics.m */; };
+		D917608812FB3C180000CC11 /* SMSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E680041214956D0081D73E /* SMSTableView.m */; };
+		D917608912FB3C1E0000CC11 /* SMSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A75CAACE123BCC1700FCADBD /* SMSButton.m */; };
+		D92FA82A13AF7B8200FD8B7D /* NSString+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = D92FA82913AF7B8200FD8B7D /* NSString+XML.m */; };
+		D937CBD9138180D9003AF1C5 /* NSNumber+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = D937CBD8138180D9003AF1C5 /* NSNumber+SMS.m */; };
+		D94CA21413AA4E57009A171D /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = A77729FF120A707700342ACB /* NSString+UUID.m */; };
+		D95C829E12DDED5000C5078F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A7772A09120A708B00342ACB /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D95C82A012DDED5000C5078F /* NSData+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = A75C0B821226A05B006AF630 /* NSData+Crypto.m */; };
+		D95C82A212DDED5000C5078F /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D133E12160BF80010EE39 /* NSData+Hex.m */; };
+		D95C82A612DDED5000C5078F /* NSDate+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DF4241242DE6800A48840 /* NSDate+SMS.m */; };
+		D95C82A812DDED5000C5078F /* NSDateFormatter+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DEECC124161DC00A48840 /* NSDateFormatter+SMS.m */; };
+		D95C82BA12DDED5000C5078F /* UIImage+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A74DC46512258B2E0092894C /* UIImage+SMS.m */; };
+		D98A963613295E2200268CCA /* SMSChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98A963513295E2200268CCA /* SMSChatViewController.m */; };
+		D9A18B1815176C9B00B1C7DE /* 1-blank-px.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18AFF15176C9B00B1C7DE /* 1-blank-px.png */; };
+		D9A18B1915176C9B00B1C7DE /* SMSAlphaSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0015176C9B00B1C7DE /* SMSAlphaSlider.png */; };
+		D9A18B1A15176C9B00B1C7DE /* SMSAlphaSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0115176C9B00B1C7DE /* SMSAlphaSlider@2x.png */; };
+		D9A18B1B15176C9B00B1C7DE /* SMSAlphaSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0215176C9B00B1C7DE /* SMSAlphaSlider~ipad.png */; };
+		D9A18B1C15176C9B00B1C7DE /* SMSChatField.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0315176C9B00B1C7DE /* SMSChatField.png */; };
+		D9A18B1D15176C9B00B1C7DE /* SMSChatField@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0415176C9B00B1C7DE /* SMSChatField@2x.png */; };
+		D9A18B1E15176C9B00B1C7DE /* SMSColorPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0515176C9B00B1C7DE /* SMSColorPalette.png */; };
+		D9A18B1F15176C9B00B1C7DE /* SMSColorPalette~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0615176C9B00B1C7DE /* SMSColorPalette~ipad.png */; };
+		D9A18B2015176C9B00B1C7DE /* SMSColorSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0715176C9B00B1C7DE /* SMSColorSlider.png */; };
+		D9A18B2115176C9B00B1C7DE /* SMSColorSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0815176C9B00B1C7DE /* SMSColorSlider@2x.png */; };
+		D9A18B2215176C9B00B1C7DE /* SMSColorSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0915176C9B00B1C7DE /* SMSColorSlider~ipad.png */; };
+		D9A18B2315176C9B00B1C7DE /* SMSIncomingTextBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0A15176C9B00B1C7DE /* SMSIncomingTextBubble.png */; };
+		D9A18B2415176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0B15176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png */; };
+		D9A18B2515176C9B00B1C7DE /* SMSLineSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0C15176C9B00B1C7DE /* SMSLineSlider.png */; };
+		D9A18B2615176C9B00B1C7DE /* SMSLineSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0D15176C9B00B1C7DE /* SMSLineSlider@2x.png */; };
+		D9A18B2715176C9B00B1C7DE /* SMSLineSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0E15176C9B00B1C7DE /* SMSLineSlider~ipad.png */; };
+		D9A18B2815176C9B00B1C7DE /* SMSOutgoingTextBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0F15176C9B00B1C7DE /* SMSOutgoingTextBubble.png */; };
+		D9A18B2915176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1015176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png */; };
+		D9A18B2A15176C9B00B1C7DE /* SMSSendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1115176C9B00B1C7DE /* SMSSendButton.png */; };
+		D9A18B2B15176C9B00B1C7DE /* SMSSendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1215176C9B00B1C7DE /* SMSSendButton@2x.png */; };
+		D9A18B2C15176C9B00B1C7DE /* SMSSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1315176C9B00B1C7DE /* SMSSliderThumb.png */; };
+		D9A18B2D15176C9B00B1C7DE /* SMSSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1415176C9B00B1C7DE /* SMSSliderThumb@2x.png */; };
+		D9A18B2E15176C9B00B1C7DE /* SMSSliderThumb~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1515176C9B00B1C7DE /* SMSSliderThumb~ipad.png */; };
+		D9A18B2F15176C9B00B1C7DE /* SMSUndo.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1615176C9B00B1C7DE /* SMSUndo.png */; };
+		D9A18B3015176C9B00B1C7DE /* SMSUndo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1715176C9B00B1C7DE /* SMSUndo@2x.png */; };
+		D9A18B3E1517784100B1C7DE /* SMSColumnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3B1517784000B1C7DE /* SMSColumnsView.m */; };
+		D9A18B3F1517784100B1C7DE /* SMSTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3C1517784000B1C7DE /* SMSTagsView.m */; };
+		D9A18B401517784100B1C7DE /* SMSTilesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3D1517784000B1C7DE /* SMSTilesView.m */; };
+		D9AD81A81309B30C0099D43D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42B091309B03A0054C72D /* Security.framework */; };
+		D9CE7ECE12A6938300E9E516 /* SMSSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CE7ECC12A6938300E9E516 /* SMSSplitViewController.m */; };
+		D9D1ABB21309AE1A0075B7C2 /* SMSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D1ABAF1309ACC10075B7C2 /* SMSWebView.m */; };
+		D9D42AF91309AFB20054C72D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AF81309AFB20054C72D /* Foundation.framework */; };
+		D9D42AFB1309AFB60054C72D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AFA1309AFB60054C72D /* UIKit.framework */; };
+		D9D42AFC1309AFD50054C72D /* libSMSForceLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C829812DDED4000C5078F /* libSMSForceLoad.a */; };
+		D9D42B001309B0060054C72D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AFF1309B0060054C72D /* CoreGraphics.framework */; };
+		D9D42B071309B00F0054C72D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AFA1309AFB60054C72D /* UIKit.framework */; };
+		D9D42B081309B00F0054C72D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AF81309AFB20054C72D /* Foundation.framework */; };
+		D9D42B0A1309B03A0054C72D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42B091309B03A0054C72D /* Security.framework */; };
+		D9D42B0B1309B0570054C72D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AFF1309B0060054C72D /* CoreGraphics.framework */; };
+		D9D42B0F1309B0F70054C72D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42B0E1309B0F60054C72D /* QuartzCore.framework */; };
+		D9E19109141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E19108141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A71D1FA7120CD816001F7032 /* SMSCoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSCoreGraphics.h; path = include/SMSCoreGraphics.h; sourceTree = "<group>"; };
+		A71D1FA8120CD816001F7032 /* SMSCoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSCoreGraphics.m; path = libSMS/SMSCoreGraphics.m; sourceTree = "<group>"; };
+		A71D20E6120CE2CC001F7032 /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSViewController.h; path = include/SMSViewController.h; sourceTree = "<group>"; };
+		A71D20E7120CE2CC001F7032 /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSViewController.m; path = libSMS/SMSViewController.m; sourceTree = "<group>"; };
+		A71DEECB124161DC00A48840 /* NSDateFormatter+SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+SMS.h"; path = "include/NSDateFormatter+SMS.h"; sourceTree = "<group>"; };
+		A71DEECC124161DC00A48840 /* NSDateFormatter+SMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+SMS.m"; path = "libSMS/NSDateFormatter+SMS.m"; sourceTree = "<group>"; };
+		A71DF4231242DE6800A48840 /* NSDate+SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+SMS.h"; path = "include/NSDate+SMS.h"; sourceTree = "<group>"; };
+		A71DF4241242DE6800A48840 /* NSDate+SMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+SMS.m"; path = "libSMS/NSDate+SMS.m"; sourceTree = "<group>"; };
+		A7243B8C122D7A370073EF5F /* SMSDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSDrawingView.h; path = include/SMSDrawingView.h; sourceTree = "<group>"; };
+		A7243B8D122D7A370073EF5F /* SMSDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSDrawingView.m; path = libSMS/SMSDrawingView.m; sourceTree = "<group>"; };
+		A74DC46412258B2E0092894C /* UIImage+SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+SMS.h"; path = "include/UIImage+SMS.h"; sourceTree = "<group>"; };
+		A74DC46512258B2E0092894C /* UIImage+SMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SMS.m"; path = "libSMS/UIImage+SMS.m"; sourceTree = "<group>"; };
+		A75C0B811226A05B006AF630 /* NSData+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Crypto.h"; path = "include/NSData+Crypto.h"; sourceTree = "<group>"; };
+		A75C0B821226A05B006AF630 /* NSData+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Crypto.m"; path = "libSMS/NSData+Crypto.m"; sourceTree = "<group>"; };
+		A75C0BFD1226B595006AF630 /* SMSSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSSecurity.h; path = include/SMSSecurity.h; sourceTree = "<group>"; };
+		A75C0BFE1226B595006AF630 /* SMSSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSSecurity.m; path = libSMS/SMSSecurity.m; sourceTree = "<group>"; };
+		A75CAACD123BCC1700FCADBD /* SMSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSButton.h; path = include/SMSButton.h; sourceTree = "<group>"; };
+		A75CAACE123BCC1700FCADBD /* SMSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSButton.m; path = libSMS/SMSButton.m; sourceTree = "<group>"; };
+		A774B2DE121DBC450052C3DF /* libSMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libSMS.h; path = include/libSMS.h; sourceTree = "<group>"; };
+		A777296C120A6E8800342ACB /* SMSHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSHTTPRequest.h; path = include/SMSHTTPRequest.h; sourceTree = "<group>"; };
+		A777296D120A6E8800342ACB /* SMSHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSHTTPRequest.m; path = libSMS/SMSHTTPRequest.m; sourceTree = "<group>"; };
+		A7772970120A6E9E00342ACB /* SMSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSAlertView.h; path = include/SMSAlertView.h; sourceTree = "<group>"; };
+		A7772971120A6E9E00342ACB /* SMSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSAlertView.m; path = libSMS/SMSAlertView.m; sourceTree = "<group>"; };
+		A77729FE120A707700342ACB /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "include/NSString+UUID.h"; sourceTree = "<group>"; };
+		A77729FF120A707700342ACB /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "libSMS/NSString+UUID.m"; sourceTree = "<group>"; };
+		A7772A08120A708B00342ACB /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "include/NSData+Base64.h"; sourceTree = "<group>"; };
+		A7772A09120A708B00342ACB /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "libSMS/NSData+Base64.m"; sourceTree = "<group>"; };
+		A79D133D12160BF80010EE39 /* NSData+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Hex.h"; path = "include/NSData+Hex.h"; sourceTree = "<group>"; };
+		A79D133E12160BF80010EE39 /* NSData+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Hex.m"; path = "libSMS/NSData+Hex.m"; sourceTree = "<group>"; };
+		A7A18C7B129944FE0089EB44 /* SMSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSWebViewController.h; path = include/SMSWebViewController.h; sourceTree = "<group>"; };
+		A7A18C7C129944FE0089EB44 /* SMSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSWebViewController.m; path = libSMS/SMSWebViewController.m; sourceTree = "<group>"; };
+		A7E301B1122823D100B33670 /* SMSLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSLoadingView.h; path = include/SMSLoadingView.h; sourceTree = "<group>"; };
+		A7E301B2122823D100B33670 /* SMSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSLoadingView.m; path = libSMS/SMSLoadingView.m; sourceTree = "<group>"; };
+		A7E48C071219DC8F0092D9D0 /* libSMSResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libSMSResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E48C081219DC8F0092D9D0 /* libSMSResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "libSMSResources-Info.plist"; path = "libSMS/libSMSResources-Info.plist"; sourceTree = "<group>"; };
+		A7E67FEA121494750081D73E /* SMSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSTableViewController.h; path = include/SMSTableViewController.h; sourceTree = "<group>"; };
+		A7E67FEB121494750081D73E /* SMSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSTableViewController.m; path = libSMS/SMSTableViewController.m; sourceTree = "<group>"; };
+		A7E680031214956D0081D73E /* SMSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSTableView.h; path = include/SMSTableView.h; sourceTree = "<group>"; };
+		A7E680041214956D0081D73E /* SMSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSTableView.m; path = libSMS/SMSTableView.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* libSMS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libSMS_Prefix.pch; path = libSMS/libSMS_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		D2AAC07E0554694100DB518D /* libSMS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92FA82913AF7B8200FD8B7D /* NSString+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+XML.m"; path = "libSMS/NSString+XML.m"; sourceTree = "<group>"; };
+		D92FA82B13AF7C9B00FD8B7D /* NSString+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+XML.h"; path = "include/NSString+XML.h"; sourceTree = "<group>"; };
+		D937CBD8138180D9003AF1C5 /* NSNumber+SMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+SMS.m"; path = "libSMS/NSNumber+SMS.m"; sourceTree = "<group>"; };
+		D937CBDA138197D1003AF1C5 /* NSNumber+SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+SMS.h"; path = "include/NSNumber+SMS.h"; sourceTree = "<group>"; };
+		D95C829812DDED4000C5078F /* libSMSForceLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMSForceLoad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98A963413295E2200268CCA /* SMSChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSChatViewController.h; path = include/SMSChatViewController.h; sourceTree = "<group>"; };
+		D98A963513295E2200268CCA /* SMSChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSChatViewController.m; path = libSMS/SMSChatViewController.m; sourceTree = "<group>"; };
+		D9A18AFF15176C9B00B1C7DE /* 1-blank-px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-blank-px.png"; path = "Images/1-blank-px.png"; sourceTree = "<group>"; };
+		D9A18B0015176C9B00B1C7DE /* SMSAlphaSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSAlphaSlider.png; path = Images/SMSAlphaSlider.png; sourceTree = "<group>"; };
+		D9A18B0115176C9B00B1C7DE /* SMSAlphaSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider@2x.png"; path = "Images/SMSAlphaSlider@2x.png"; sourceTree = "<group>"; };
+		D9A18B0215176C9B00B1C7DE /* SMSAlphaSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider~ipad.png"; path = "Images/SMSAlphaSlider~ipad.png"; sourceTree = "<group>"; };
+		D9A18B0315176C9B00B1C7DE /* SMSChatField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSChatField.png; path = Images/SMSChatField.png; sourceTree = "<group>"; };
+		D9A18B0415176C9B00B1C7DE /* SMSChatField@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSChatField@2x.png"; path = "Images/SMSChatField@2x.png"; sourceTree = "<group>"; };
+		D9A18B0515176C9B00B1C7DE /* SMSColorPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSColorPalette.png; path = Images/SMSColorPalette.png; sourceTree = "<group>"; };
+		D9A18B0615176C9B00B1C7DE /* SMSColorPalette~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorPalette~ipad.png"; path = "Images/SMSColorPalette~ipad.png"; sourceTree = "<group>"; };
+		D9A18B0715176C9B00B1C7DE /* SMSColorSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSColorSlider.png; path = Images/SMSColorSlider.png; sourceTree = "<group>"; };
+		D9A18B0815176C9B00B1C7DE /* SMSColorSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider@2x.png"; path = "Images/SMSColorSlider@2x.png"; sourceTree = "<group>"; };
+		D9A18B0915176C9B00B1C7DE /* SMSColorSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider~ipad.png"; path = "Images/SMSColorSlider~ipad.png"; sourceTree = "<group>"; };
+		D9A18B0A15176C9B00B1C7DE /* SMSIncomingTextBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSIncomingTextBubble.png; path = Images/SMSIncomingTextBubble.png; sourceTree = "<group>"; };
+		D9A18B0B15176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSIncomingTextBubble@2x.png"; path = "Images/SMSIncomingTextBubble@2x.png"; sourceTree = "<group>"; };
+		D9A18B0C15176C9B00B1C7DE /* SMSLineSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSLineSlider.png; path = Images/SMSLineSlider.png; sourceTree = "<group>"; };
+		D9A18B0D15176C9B00B1C7DE /* SMSLineSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider@2x.png"; path = "Images/SMSLineSlider@2x.png"; sourceTree = "<group>"; };
+		D9A18B0E15176C9B00B1C7DE /* SMSLineSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider~ipad.png"; path = "Images/SMSLineSlider~ipad.png"; sourceTree = "<group>"; };
+		D9A18B0F15176C9B00B1C7DE /* SMSOutgoingTextBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSOutgoingTextBubble.png; path = Images/SMSOutgoingTextBubble.png; sourceTree = "<group>"; };
+		D9A18B1015176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSOutgoingTextBubble@2x.png"; path = "Images/SMSOutgoingTextBubble@2x.png"; sourceTree = "<group>"; };
+		D9A18B1115176C9B00B1C7DE /* SMSSendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSSendButton.png; path = Images/SMSSendButton.png; sourceTree = "<group>"; };
+		D9A18B1215176C9B00B1C7DE /* SMSSendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSendButton@2x.png"; path = "Images/SMSSendButton@2x.png"; sourceTree = "<group>"; };
+		D9A18B1315176C9B00B1C7DE /* SMSSliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSSliderThumb.png; path = Images/SMSSliderThumb.png; sourceTree = "<group>"; };
+		D9A18B1415176C9B00B1C7DE /* SMSSliderThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSliderThumb@2x.png"; path = "Images/SMSSliderThumb@2x.png"; sourceTree = "<group>"; };
+		D9A18B1515176C9B00B1C7DE /* SMSSliderThumb~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSliderThumb~ipad.png"; path = "Images/SMSSliderThumb~ipad.png"; sourceTree = "<group>"; };
+		D9A18B1615176C9B00B1C7DE /* SMSUndo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSUndo.png; path = Images/SMSUndo.png; sourceTree = "<group>"; };
+		D9A18B1715176C9B00B1C7DE /* SMSUndo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSUndo@2x.png"; path = "Images/SMSUndo@2x.png"; sourceTree = "<group>"; };
+		D9A18B3B1517784000B1C7DE /* SMSColumnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSColumnsView.m; path = libSMS/SMSColumnsView.m; sourceTree = "<group>"; };
+		D9A18B3C1517784000B1C7DE /* SMSTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSTagsView.m; path = libSMS/SMSTagsView.m; sourceTree = "<group>"; };
+		D9A18B3D1517784000B1C7DE /* SMSTilesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSTilesView.m; path = libSMS/SMSTilesView.m; sourceTree = "<group>"; };
+		D9A18B411517785B00B1C7DE /* SMSColumnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSColumnsView.h; path = include/SMSColumnsView.h; sourceTree = "<group>"; };
+		D9A18B421517785B00B1C7DE /* SMSTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSTagsView.h; path = include/SMSTagsView.h; sourceTree = "<group>"; };
+		D9A18B431517785B00B1C7DE /* SMSTilesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSTilesView.h; path = include/SMSTilesView.h; sourceTree = "<group>"; };
+		D9CE7ECB12A6938300E9E516 /* SMSSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSSplitViewController.h; path = include/SMSSplitViewController.h; sourceTree = "<group>"; };
+		D9CE7ECC12A6938300E9E516 /* SMSSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSSplitViewController.m; path = libSMS/SMSSplitViewController.m; sourceTree = "<group>"; };
+		D9D1ABAF1309ACC10075B7C2 /* SMSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSWebView.m; path = libSMS/SMSWebView.m; sourceTree = "<group>"; };
+		D9D1ABB11309ACF20075B7C2 /* SMSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSWebView.h; path = include/SMSWebView.h; sourceTree = "<group>"; };
+		D9D42AF81309AFB20054C72D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9D42AFA1309AFB60054C72D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9D42AFF1309B0060054C72D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9D42B091309B03A0054C72D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D9D42B0E1309B0F60054C72D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D9E19107141FC7BF00CF84B4 /* SMSKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSKeychainItemWrapper.h; path = include/SMSKeychainItemWrapper.h; sourceTree = "<group>"; };
+		D9E19108141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSKeychainItemWrapper.m; path = libSMS/SMSKeychainItemWrapper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D42B081309B00F0054C72D /* Foundation.framework in Frameworks */,
+				D9D42B071309B00F0054C72D /* UIKit.framework in Frameworks */,
+				D9D42B001309B0060054C72D /* CoreGraphics.framework in Frameworks */,
+				D9D42B0F1309B0F70054C72D /* QuartzCore.framework in Frameworks */,
+				D9AD81A81309B30C0099D43D /* Security.framework in Frameworks */,
+				D9D42AFC1309AFD50054C72D /* libSMSForceLoad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95C829612DDED4000C5078F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D42AF91309AFB20054C72D /* Foundation.framework in Frameworks */,
+				D9D42AFB1309AFB60054C72D /* UIKit.framework in Frameworks */,
+				D9D42B0B1309B0570054C72D /* CoreGraphics.framework in Frameworks */,
+				D9D42B0A1309B03A0054C72D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libSMS.a */,
+				D95C829812DDED4000C5078F /* libSMSForceLoad.a */,
+				A7E48C071219DC8F0092D9D0 /* libSMSResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* libSMS */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				A7772A14120A714E00342ACB /* Functions */,
+				A74DC420122589D50092894C /* Images */,
+				D9D784A51305B40300859252 /* Supporting Files */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = libSMS;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D42AF81309AFB20054C72D /* Foundation.framework */,
+				D9D42AFA1309AFB60054C72D /* UIKit.framework */,
+				D9D42AFF1309B0060054C72D /* CoreGraphics.framework */,
+				D9D42B0E1309B0F60054C72D /* QuartzCore.framework */,
+				D9D42B091309B03A0054C72D /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A77729FD120A703C00342ACB /* Categories */,
+				A7E67FEF121494810081D73E /* Views */,
+				A7E67FF01214948D0081D73E /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A74DC420122589D50092894C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D9A18AFF15176C9B00B1C7DE /* 1-blank-px.png */,
+				D9A18B0015176C9B00B1C7DE /* SMSAlphaSlider.png */,
+				D9A18B0115176C9B00B1C7DE /* SMSAlphaSlider@2x.png */,
+				D9A18B0215176C9B00B1C7DE /* SMSAlphaSlider~ipad.png */,
+				D9A18B0315176C9B00B1C7DE /* SMSChatField.png */,
+				D9A18B0415176C9B00B1C7DE /* SMSChatField@2x.png */,
+				D9A18B0515176C9B00B1C7DE /* SMSColorPalette.png */,
+				D9A18B0615176C9B00B1C7DE /* SMSColorPalette~ipad.png */,
+				D9A18B0715176C9B00B1C7DE /* SMSColorSlider.png */,
+				D9A18B0815176C9B00B1C7DE /* SMSColorSlider@2x.png */,
+				D9A18B0915176C9B00B1C7DE /* SMSColorSlider~ipad.png */,
+				D9A18B0A15176C9B00B1C7DE /* SMSIncomingTextBubble.png */,
+				D9A18B0B15176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png */,
+				D9A18B0C15176C9B00B1C7DE /* SMSLineSlider.png */,
+				D9A18B0D15176C9B00B1C7DE /* SMSLineSlider@2x.png */,
+				D9A18B0E15176C9B00B1C7DE /* SMSLineSlider~ipad.png */,
+				D9A18B0F15176C9B00B1C7DE /* SMSOutgoingTextBubble.png */,
+				D9A18B1015176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png */,
+				D9A18B1115176C9B00B1C7DE /* SMSSendButton.png */,
+				D9A18B1215176C9B00B1C7DE /* SMSSendButton@2x.png */,
+				D9A18B1315176C9B00B1C7DE /* SMSSliderThumb.png */,
+				D9A18B1415176C9B00B1C7DE /* SMSSliderThumb@2x.png */,
+				D9A18B1515176C9B00B1C7DE /* SMSSliderThumb~ipad.png */,
+				D9A18B1615176C9B00B1C7DE /* SMSUndo.png */,
+				D9A18B1715176C9B00B1C7DE /* SMSUndo@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A77729FD120A703C00342ACB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A7772A08120A708B00342ACB /* NSData+Base64.h */,
+				A7772A09120A708B00342ACB /* NSData+Base64.m */,
+				A75C0B811226A05B006AF630 /* NSData+Crypto.h */,
+				A75C0B821226A05B006AF630 /* NSData+Crypto.m */,
+				A79D133D12160BF80010EE39 /* NSData+Hex.h */,
+				A79D133E12160BF80010EE39 /* NSData+Hex.m */,
+				A71DF4231242DE6800A48840 /* NSDate+SMS.h */,
+				A71DF4241242DE6800A48840 /* NSDate+SMS.m */,
+				A71DEECB124161DC00A48840 /* NSDateFormatter+SMS.h */,
+				A71DEECC124161DC00A48840 /* NSDateFormatter+SMS.m */,
+				D937CBDA138197D1003AF1C5 /* NSNumber+SMS.h */,
+				D937CBD8138180D9003AF1C5 /* NSNumber+SMS.m */,
+				A77729FE120A707700342ACB /* NSString+UUID.h */,
+				A77729FF120A707700342ACB /* NSString+UUID.m */,
+				D92FA82B13AF7C9B00FD8B7D /* NSString+XML.h */,
+				D92FA82913AF7B8200FD8B7D /* NSString+XML.m */,
+				A74DC46412258B2E0092894C /* UIImage+SMS.h */,
+				A74DC46512258B2E0092894C /* UIImage+SMS.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A7772A14120A714E00342ACB /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				A71D1FA7120CD816001F7032 /* SMSCoreGraphics.h */,
+				A71D1FA8120CD816001F7032 /* SMSCoreGraphics.m */,
+				A75C0BFD1226B595006AF630 /* SMSSecurity.h */,
+				A75C0BFE1226B595006AF630 /* SMSSecurity.m */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+		A7E67FEF121494810081D73E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7772970120A6E9E00342ACB /* SMSAlertView.h */,
+				A7772971120A6E9E00342ACB /* SMSAlertView.m */,
+				A75CAACD123BCC1700FCADBD /* SMSButton.h */,
+				A75CAACE123BCC1700FCADBD /* SMSButton.m */,
+				D9A18B411517785B00B1C7DE /* SMSColumnsView.h */,
+				D9A18B3B1517784000B1C7DE /* SMSColumnsView.m */,
+				A7243B8C122D7A370073EF5F /* SMSDrawingView.h */,
+				A7243B8D122D7A370073EF5F /* SMSDrawingView.m */,
+				A7E301B1122823D100B33670 /* SMSLoadingView.h */,
+				A7E301B2122823D100B33670 /* SMSLoadingView.m */,
+				A7E680031214956D0081D73E /* SMSTableView.h */,
+				A7E680041214956D0081D73E /* SMSTableView.m */,
+				D9A18B421517785B00B1C7DE /* SMSTagsView.h */,
+				D9A18B3C1517784000B1C7DE /* SMSTagsView.m */,
+				D9A18B431517785B00B1C7DE /* SMSTilesView.h */,
+				D9A18B3D1517784000B1C7DE /* SMSTilesView.m */,
+				D9D1ABB11309ACF20075B7C2 /* SMSWebView.h */,
+				D9D1ABAF1309ACC10075B7C2 /* SMSWebView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A7E67FF01214948D0081D73E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D98A963413295E2200268CCA /* SMSChatViewController.h */,
+				D98A963513295E2200268CCA /* SMSChatViewController.m */,
+				A777296C120A6E8800342ACB /* SMSHTTPRequest.h */,
+				A777296D120A6E8800342ACB /* SMSHTTPRequest.m */,
+				D9E19107141FC7BF00CF84B4 /* SMSKeychainItemWrapper.h */,
+				D9E19108141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m */,
+				D9CE7ECB12A6938300E9E516 /* SMSSplitViewController.h */,
+				D9CE7ECC12A6938300E9E516 /* SMSSplitViewController.m */,
+				A7E67FEA121494750081D73E /* SMSTableViewController.h */,
+				A7E67FEB121494750081D73E /* SMSTableViewController.m */,
+				A71D20E6120CE2CC001F7032 /* SMSViewController.h */,
+				A71D20E7120CE2CC001F7032 /* SMSViewController.m */,
+				A7A18C7B129944FE0089EB44 /* SMSWebViewController.h */,
+				A7A18C7C129944FE0089EB44 /* SMSWebViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D9D784A51305B40300859252 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A774B2DE121DBC450052C3DF /* libSMS.h */,
+				AA747D9E0F9514B9006C5449 /* libSMS_Prefix.pch */,
+				A7E48C081219DC8F0092D9D0 /* libSMSResources-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7E48C061219DC8F0092D9D0 /* libSMSResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E48C0B1219DC8F0092D9D0 /* Build configuration list for PBXNativeTarget "libSMSResources" */;
+			buildPhases = (
+				A7E48C031219DC8F0092D9D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libSMSResources;
+			productName = libSMSResources;
+			productReference = A7E48C071219DC8F0092D9D0 /* libSMSResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC07D0554694100DB518D /* libSMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libSMS" */;
+			buildPhases = (
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libSMS;
+			productName = libSMS;
+			productReference = D2AAC07E0554694100DB518D /* libSMS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D95C829712DDED4000C5078F /* libSMSForceLoad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95C82F512DDEDA700C5078F /* Build configuration list for PBXNativeTarget "libSMSForceLoad" */;
+			buildPhases = (
+				D95C829512DDED4000C5078F /* Sources */,
+				D95C829612DDED4000C5078F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libSMSForceLoad;
+			productName = libSMSCategories;
+			productReference = D95C829812DDED4000C5078F /* libSMSForceLoad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "libSMS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* libSMS */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D95C829712DDED4000C5078F /* libSMSForceLoad */,
+				D2AAC07D0554694100DB518D /* libSMS */,
+				A7E48C061219DC8F0092D9D0 /* libSMSResources */,
+				D94CA20D13AA4B8D009A171D /* Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7E48C031219DC8F0092D9D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A18B1815176C9B00B1C7DE /* 1-blank-px.png in Resources */,
+				D9A18B1915176C9B00B1C7DE /* SMSAlphaSlider.png in Resources */,
+				D9A18B1A15176C9B00B1C7DE /* SMSAlphaSlider@2x.png in Resources */,
+				D9A18B1B15176C9B00B1C7DE /* SMSAlphaSlider~ipad.png in Resources */,
+				D9A18B1C15176C9B00B1C7DE /* SMSChatField.png in Resources */,
+				D9A18B1D15176C9B00B1C7DE /* SMSChatField@2x.png in Resources */,
+				D9A18B1E15176C9B00B1C7DE /* SMSColorPalette.png in Resources */,
+				D9A18B1F15176C9B00B1C7DE /* SMSColorPalette~ipad.png in Resources */,
+				D9A18B2015176C9B00B1C7DE /* SMSColorSlider.png in Resources */,
+				D9A18B2115176C9B00B1C7DE /* SMSColorSlider@2x.png in Resources */,
+				D9A18B2215176C9B00B1C7DE /* SMSColorSlider~ipad.png in Resources */,
+				D9A18B2315176C9B00B1C7DE /* SMSIncomingTextBubble.png in Resources */,
+				D9A18B2415176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png in Resources */,
+				D9A18B2515176C9B00B1C7DE /* SMSLineSlider.png in Resources */,
+				D9A18B2615176C9B00B1C7DE /* SMSLineSlider@2x.png in Resources */,
+				D9A18B2715176C9B00B1C7DE /* SMSLineSlider~ipad.png in Resources */,
+				D9A18B2815176C9B00B1C7DE /* SMSOutgoingTextBubble.png in Resources */,
+				D9A18B2915176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png in Resources */,
+				D9A18B2A15176C9B00B1C7DE /* SMSSendButton.png in Resources */,
+				D9A18B2B15176C9B00B1C7DE /* SMSSendButton@2x.png in Resources */,
+				D9A18B2C15176C9B00B1C7DE /* SMSSliderThumb.png in Resources */,
+				D9A18B2D15176C9B00B1C7DE /* SMSSliderThumb@2x.png in Resources */,
+				D9A18B2E15176C9B00B1C7DE /* SMSSliderThumb~ipad.png in Resources */,
+				D9A18B2F15176C9B00B1C7DE /* SMSUndo.png in Resources */,
+				D9A18B3015176C9B00B1C7DE /* SMSUndo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D94CA21113AA4B93009A171D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -target libSMSForceLoad -sdk iphonesimulator -configuration Release clean\nxcodebuild -target libSMSForceLoad -sdk iphonesimulator -configuration Release build\nxcodebuild -target libSMSForceLoad -sdk iphoneos -configuration Release clean\nxcodebuild -target libSMSForceLoad -sdk iphoneos -configuration Release build\nlipo ./build/Release-iphonesimulator/libSMSForceLoad.a ./build/Release-iphoneos/libSMSForceLoad.a -create -output ./build/libSMS/libSMSForceLoad.a\n\nxcodebuild -target libSMS -sdk iphonesimulator -configuration Release clean\nxcodebuild -target libSMS -sdk iphonesimulator -configuration Release build\nxcodebuild -target libSMS -sdk iphoneos -configuration Release clean\nxcodebuild -target libSMS -sdk iphoneos -configuration Release build\nlipo ./build/Release-iphonesimulator/libSMS.a ./build/Release-iphoneos/libSMS.a -create -output ./build/libSMS/libSMS.a\n\nxcodebuild -target libSMSResources -sdk iphoneos -configuration Release clean\nxcodebuild -target libSMSResources -sdk iphoneos -configuration Release build\n\nrm -rf ./build/libSMS/libSMSResources.bundle\ncp -r ./build/Release-iphoneos/libSMSResources.bundle ./build/libSMS/libSMSResources.bundle\n\nrm -rf ./build/libSMS/include\ncp -r ./include ./build/libSMS/include\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777296F120A6E8800342ACB /* SMSHTTPRequest.m in Sources */,
+				A7772973120A6E9E00342ACB /* SMSAlertView.m in Sources */,
+				A71D20E9120CE2CC001F7032 /* SMSViewController.m in Sources */,
+				A7E67FED121494750081D73E /* SMSTableViewController.m in Sources */,
+				A75C0C001226B595006AF630 /* SMSSecurity.m in Sources */,
+				A7E301B4122823D100B33670 /* SMSLoadingView.m in Sources */,
+				A7243B8F122D7A370073EF5F /* SMSDrawingView.m in Sources */,
+				A7A18C7E129944FE0089EB44 /* SMSWebViewController.m in Sources */,
+				D9CE7ECE12A6938300E9E516 /* SMSSplitViewController.m in Sources */,
+				D98A963613295E2200268CCA /* SMSChatViewController.m in Sources */,
+				D9081E691367540600D80030 /* SMSCoreGraphics.m in Sources */,
+				D9E19109141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m in Sources */,
+				D9A18B3E1517784100B1C7DE /* SMSColumnsView.m in Sources */,
+				D9A18B3F1517784100B1C7DE /* SMSTagsView.m in Sources */,
+				D9A18B401517784100B1C7DE /* SMSTilesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95C829512DDED4000C5078F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95C829E12DDED5000C5078F /* NSData+Base64.m in Sources */,
+				D95C82A012DDED5000C5078F /* NSData+Crypto.m in Sources */,
+				D95C82A212DDED5000C5078F /* NSData+Hex.m in Sources */,
+				D95C82A612DDED5000C5078F /* NSDate+SMS.m in Sources */,
+				D95C82A812DDED5000C5078F /* NSDateFormatter+SMS.m in Sources */,
+				D95C82BA12DDED5000C5078F /* UIImage+SMS.m in Sources */,
+				D917608812FB3C180000CC11 /* SMSTableView.m in Sources */,
+				D917608912FB3C1E0000CC11 /* SMSButton.m in Sources */,
+				D9D1ABB21309AE1A0075B7C2 /* SMSWebView.m in Sources */,
+				D937CBD9138180D9003AF1C5 /* NSNumber+SMS.m in Sources */,
+				D94CA21413AA4E57009A171D /* NSString+UUID.m in Sources */,
+				D92FA82A13AF7B8200FD8B7D /* NSString+XML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libSMS.dst;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = libSMS/libSMS_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/build/Release-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = libSMS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/libSMS.dst;
+				EXECUTABLE_PREFIX = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = libSMS/libSMS_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/build/Release-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = libSMS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A7E48C091219DC8F0092D9D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "libSMS/libSMSResources-Info.plist";
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = libSMSResources;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A7E48C0A1219DC8F0092D9D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "libSMS/libSMSResources-Info.plist";
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = libSMSResources;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D94CA20F13AA4B8D009A171D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D94CA21013AA4B8D009A171D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D95C829912DDED4100C5078F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = libSMS/libSMS_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = libSMSForceLoad;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D95C829A12DDED4100C5078F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = libSMS/libSMS_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = libSMSForceLoad;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libSMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "libSMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E48C0B1219DC8F0092D9D0 /* Build configuration list for PBXNativeTarget "libSMSResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E48C091219DC8F0092D9D0 /* Debug */,
+				A7E48C0A1219DC8F0092D9D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94CA20E13AA4B8D009A171D /* Build configuration list for PBXAggregateTarget "Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94CA20F13AA4B8D009A171D /* Debug */,
+				D94CA21013AA4B8D009A171D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95C82F512DDEDA700C5078F /* Build configuration list for PBXNativeTarget "libSMSForceLoad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95C829912DDED4100C5078F /* Debug */,
+				D95C829A12DDED4100C5078F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
