@@ -22,27 +22,37 @@ Header Search Paths:
 
 A *UIScrollView* subclass for laying out columns of subviews.
 
-![alt SMSColumnsView](/readme_images_/SMSColumnsView.png "Title")
+![alt SMSColumnsView.png](raw/master/readme_images/SMSColumnsView.PNG)
 
 ### SMSDrawingView
 
 A *UIView* subclass for drawing clipart. Can be added as a subview (with a clear background) to another view to annotate other content.
 
+![alt SMSDrawingView.png](raw/master/readme_images/SMSDrawingView.PNG)
+
 ### SMSTagsView
 
 A *UIView* subclass that lays out subviews (of varying widths) sequentially in rows.
+
+![alt SMSTagsView.png](raw/master/readme_images/SMSTagsView.PNG)
 
 ### SMSTilesView
 
 A *UIScrollView* subclass that manages tiles in a grid with a similar API to *UITableView*.
 
+![alt SMSTilesView.png](raw/master/readme_images/SMSTilesView.PNG)
+
 ### SMSChatViewController
 
 A copy of the iOS Messages user interface.
 
+![alt SMSChatViewController.png](raw/master/readme_images/SMSChatViewController.PNG)
+
 ### SMSSplitViewController
 
 A split view controller that allows for horizontal and vertical layouts as well as different sizing in portrait and landscape.
+
+![alt SMSSplitViewController.png](raw/master/readme_images/SMSSplitViewController.PNG)
 
 ## License
 
