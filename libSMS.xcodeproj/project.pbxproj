@@ -83,6 +83,11 @@
 		D9D42B0B1309B0570054C72D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AFF1309B0060054C72D /* CoreGraphics.framework */; };
 		D9D42B0F1309B0F70054C72D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42B0E1309B0F60054C72D /* QuartzCore.framework */; };
 		D9E19109141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E19108141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D9FEB29515178E600093CEA6 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB28C15178E600093CEA6 /* DDXMLDocument.m */; };
+		D9FEB29615178E600093CEA6 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB28E15178E600093CEA6 /* DDXMLElement.m */; };
+		D9FEB29715178E600093CEA6 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB29015178E600093CEA6 /* DDXMLNode.m */; };
+		D9FEB29815178E6F0093CEA6 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB28615178E600093CEA6 /* DDXMLElementAdditions.m */; };
+		D9FEB29915178E730093CEA6 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB28915178E600093CEA6 /* NSString+DDXML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +181,18 @@
 		D9D42B0E1309B0F60054C72D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D9E19107141FC7BF00CF84B4 /* SMSKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSKeychainItemWrapper.h; path = include/SMSKeychainItemWrapper.h; sourceTree = "<group>"; };
 		D9E19108141FC7BF00CF84B4 /* SMSKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSKeychainItemWrapper.m; path = libSMS/SMSKeychainItemWrapper.m; sourceTree = "<group>"; };
+		D9FEB28515178E600093CEA6 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		D9FEB28615178E600093CEA6 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		D9FEB28815178E600093CEA6 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		D9FEB28915178E600093CEA6 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		D9FEB28A15178E600093CEA6 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		D9FEB28B15178E600093CEA6 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		D9FEB28C15178E600093CEA6 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		D9FEB28D15178E600093CEA6 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		D9FEB28E15178E600093CEA6 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		D9FEB28F15178E600093CEA6 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		D9FEB29015178E600093CEA6 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		D9FEB29215178E600093CEA6 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +240,7 @@
 				A7772A14120A714E00342ACB /* Functions */,
 				A74DC420122589D50092894C /* Images */,
 				D9D784A51305B40300859252 /* Supporting Files */,
+				D9FEB28215178E450093CEA6 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -373,6 +391,58 @@
 				A7E48C081219DC8F0092D9D0 /* libSMSResources-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9FEB28215178E450093CEA6 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D9FEB28315178E600093CEA6 /* KissXML */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D9FEB28315178E600093CEA6 /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				D9FEB28415178E600093CEA6 /* Additions */,
+				D9FEB28715178E600093CEA6 /* Categories */,
+				D9FEB28A15178E600093CEA6 /* DDXML.h */,
+				D9FEB28B15178E600093CEA6 /* DDXMLDocument.h */,
+				D9FEB28C15178E600093CEA6 /* DDXMLDocument.m */,
+				D9FEB28D15178E600093CEA6 /* DDXMLElement.h */,
+				D9FEB28E15178E600093CEA6 /* DDXMLElement.m */,
+				D9FEB28F15178E600093CEA6 /* DDXMLNode.h */,
+				D9FEB29015178E600093CEA6 /* DDXMLNode.m */,
+				D9FEB29115178E600093CEA6 /* Private */,
+			);
+			name = KissXML;
+			path = KissXML/KissXML;
+			sourceTree = "<group>";
+		};
+		D9FEB28415178E600093CEA6 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				D9FEB28515178E600093CEA6 /* DDXMLElementAdditions.h */,
+				D9FEB28615178E600093CEA6 /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		D9FEB28715178E600093CEA6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D9FEB28815178E600093CEA6 /* NSString+DDXML.h */,
+				D9FEB28915178E600093CEA6 /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D9FEB29115178E600093CEA6 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				D9FEB29215178E600093CEA6 /* DDXMLPrivate.h */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +597,9 @@
 				D9A18B3E1517784100B1C7DE /* SMSColumnsView.m in Sources */,
 				D9A18B3F1517784100B1C7DE /* SMSTagsView.m in Sources */,
 				D9A18B401517784100B1C7DE /* SMSTilesView.m in Sources */,
+				D9FEB29515178E600093CEA6 /* DDXMLDocument.m in Sources */,
+				D9FEB29615178E600093CEA6 /* DDXMLElement.m in Sources */,
+				D9FEB29715178E600093CEA6 /* DDXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +619,8 @@
 				D937CBD9138180D9003AF1C5 /* NSNumber+SMS.m in Sources */,
 				D94CA21413AA4E57009A171D /* NSString+UUID.m in Sources */,
 				D92FA82A13AF7B8200FD8B7D /* NSString+XML.m in Sources */,
+				D9FEB29815178E6F0093CEA6 /* DDXMLElementAdditions.m in Sources */,
+				D9FEB29915178E730093CEA6 /* NSString+DDXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
