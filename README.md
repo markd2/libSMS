@@ -22,37 +22,37 @@ Header Search Paths:
 
 A *UIScrollView* subclass for laying out columns of subviews.
 
-![alt SMSColumnsView.png](silvermana/libSMS/raw/master/readme_images/SMSColumnsView.png)
+![alt SMSColumnsView.png](http://github.com/silvermana/libSMS/raw/master/readme_images/SMSColumnsView.png)
 
 ### SMSDrawingView
 
 A *UIView* subclass for drawing clipart. Can be added as a subview (with a clear background) to another view to annotate other content.
 
-![SMSDrawingView.png](silvermana/libSMS/raw/master/readme_images/SMSDrawingView.png)
+![SMSDrawingView.png](http://github.com/silvermana/libSMS/raw/master/readme_images/SMSDrawingView.png)
 
 ### SMSTagsView
 
 A *UIView* subclass that lays out subviews (of varying widths) sequentially in rows.
 
-![SMSTagsView.png](silvermana/libSMS/raw/master/readme_images/SMSTagsView.png)
+![SMSTagsView.png](http://github.com/silvermana/libSMS/raw/master/readme_images/SMSTagsView.png)
 
 ### SMSTilesView
 
 A *UIScrollView* subclass that manages tiles in a grid with a similar API to *UITableView*.
 
-![SMSTilesView.png](silvermana/libSMS/raw/master/readme_images/SMSTilesView.png)
+![SMSTilesView.png](http://github.com/silvermana/libSMS/raw/master/readme_images/SMSTilesView.png)
 
 ### SMSChatViewController
 
 A copy of the iOS Messages user interface.
 
-![SMSChatViewController.png](silvermana/libSMS/raw/master/readme_images/SMSChatViewController.png)
+![SMSChatViewController.png](http://github.com/silvermana/libSMS/raw/master/readme_images/SMSChatViewController.png)
 
 ### SMSSplitViewController
 
 A split view controller that allows for horizontal and vertical layouts as well as different sizing in portrait and landscape.
 
-![SMSSplitViewController.png](silvermana/libSMS/raw/master/readme_images/SMSSplitViewController.png)
+![SMSSplitViewController.png](http://github.com/silvermana/libSMS/raw/master/readme_images/SMSSplitViewController.png)
 
 ## License
 
