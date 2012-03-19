@@ -68,7 +68,7 @@ typedef enum SMSContentType {
 	NSString *query;
 	int requestType;
     
-	id<SMSHTTPRequestDelegate> delegate;
+	id<SMSHTTPRequestDelegate> __weak delegate;
     id userInfo;
     BOOL showActivityIndicator;
     

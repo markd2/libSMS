@@ -100,8 +100,6 @@ static SEL defaultResponseHandlerSelector = nil;
 }
 + (void)setConnectionErrorAlertMessage:(NSString *)msg
 {
-    [msg retain];
-    [connectionErrorAlertMessage release];
     connectionErrorAlertMessage = msg;
 }
 
@@ -110,8 +108,6 @@ static SEL defaultResponseHandlerSelector = nil;
 + (NSString *)defaultURL { return defaultURL; }
 + (void)setDefaultURL:(NSString *)url
 {
-    [url retain];
-    [defaultURL release];
     defaultURL = url;
 }
 
@@ -162,7 +158,7 @@ static SEL defaultResponseHandlerSelector = nil;
 
 + (id)requestWithURL:(NSString *)url requestType:(int)type
 {
-    return [[[self alloc] initWithURL:url requestType:type] autorelease];
+    return [[self alloc] initWithURL:url requestType:type];
 }
 
 - (id)initWithURL:(NSString *)url
@@ -172,7 +168,7 @@ static SEL defaultResponseHandlerSelector = nil;
 
 + (id)requestWithURL:(NSString *)url
 {
-    return [[[self alloc] initWithURL:url requestType:0] autorelease];
+    return [[self alloc] initWithURL:url requestType:0];
 }
 
 - (id)initWithRequestType:(int)type
@@ -182,12 +178,12 @@ static SEL defaultResponseHandlerSelector = nil;
 
 + (id)requestWithType:(int)type
 {
-    return [[[self alloc] initWithRequestType:type] autorelease];
+    return [[self alloc] initWithRequestType:type];
 }
 
 + (id)request
 {
-	return [[[self alloc] initWithURL:defaultURL requestType:0] autorelease];
+	return [[self alloc] initWithURL:defaultURL requestType:0];
 }
 
 - (id)init
@@ -328,7 +324,7 @@ static SEL defaultResponseHandlerSelector = nil;
     for (NSString *field in httpHeaders)
         [request addValue:[httpHeaders objectForKey:field] forHTTPHeaderField:field];
     
-	connection = [[NSURLConnection connectionWithRequest:request delegate:self] retain];
+	connection = [NSURLConnection connectionWithRequest:request delegate:self];
 	if (connection != nil) {
         if (showActivityIndicator)
             [SMSHTTPRequest showNetworkActivityIndicator];
@@ -434,7 +430,7 @@ static SEL defaultResponseHandlerSelector = nil;
 	else {
 		if (SMSLoggingEnabled)
 			NSLog(@"SMSHTTPRequest: response length > threshold, streaming to file");
-		filePath = [[NSTemporaryDirectory() stringByAppendingString:[NSString UUID]] retain];
+		filePath = [NSTemporaryDirectory() stringByAppendingString:[NSString UUID]];
 		dataFile = [[NSOutputStream alloc] initToFileAtPath:filePath append:NO];
 		[dataFile open];
 	}
@@ -525,7 +521,7 @@ static SEL defaultResponseHandlerSelector = nil;
 				switch (responseContentType) {
 					case SMSContentTypeText:
 					{
-						NSString *responseString = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
+						NSString *responseString = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
 						if (SMSLoggingEnabled)
 							NSLog(@"SMSHTTPRequest: text = %@", responseString);
 						responseData = responseString;
@@ -537,8 +533,7 @@ static SEL defaultResponseHandlerSelector = nil;
 					
                     case SMSContentTypeJSON:
 					{
-						NSString *responseString = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
-                        responseData = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingAllowFragments error:nil];
+						responseData = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingAllowFragments error:nil];
 						if (SMSLoggingEnabled) {
                             NSData *prettyData = [NSJSONSerialization dataWithJSONObject:responseData options:NSJSONWritingPrettyPrinted error:nil];
                             NSString *prettyString = [[NSString alloc] initWithData:prettyData encoding:NSUTF8StringEncoding];
@@ -549,7 +544,7 @@ static SEL defaultResponseHandlerSelector = nil;
 					case SMSContentTypeXML:
 					{
 						NSError *error = nil;
-						responseData = [[[DDXMLDocument alloc] initWithData:receivedData options:0 error:&error] autorelease];
+						responseData = [[DDXMLDocument alloc] initWithData:receivedData options:0 error:&error];
 						if (SMSLoggingEnabled) {
 							if (!error)
 								NSLog(@"SMSHTTPRequest: xml = %@", [(DDXMLDocument *)responseData XMLStringWithOptions:DDXMLNodePrettyPrint]);
@@ -567,13 +562,17 @@ static SEL defaultResponseHandlerSelector = nil;
                 NSMutableDictionary *context = [NSMutableDictionary dictionaryWithObject:self forKey:SMSHTTPRequestKey];
                 if (responseData != nil)
                     [context setValue:responseData forKey:SMSHTTPResponseKey];
-				[defaultResponseHandlerTarget performSelector:defaultResponseHandlerSelector withObject:context];
+                
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                [defaultResponseHandlerTarget performSelector:defaultResponseHandlerSelector withObject:context];
+#pragma clang diagnostic pop
             }
 			
 			if ([delegate respondsToSelector:@selector(request:receivedData:)] && !ignoreData)
 				[delegate request:self receivedData:responseData];
 		} else if (responseContentType != SMSContentTypeBinary) {
-			NSString *response = [[[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding] autorelease];
+			NSString *response = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
 			if (SMSLoggingEnabled)
 				NSLog(@"SMSHTTPRequest: response = %@", response);
 		}
