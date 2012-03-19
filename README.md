@@ -1,6 +1,6 @@
 # About
 
-## SMSAlertView
+### SMSAlertView
 
 ## SMSButton
 
