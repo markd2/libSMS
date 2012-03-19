@@ -72,7 +72,6 @@
 		D9A18B401517784100B1C7DE /* SMSTilesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3D1517784000B1C7DE /* SMSTilesView.m */; };
 		D9AD81A81309B30C0099D43D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42B091309B03A0054C72D /* Security.framework */; };
 		D9CE7ECE12A6938300E9E516 /* SMSSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CE7ECC12A6938300E9E516 /* SMSSplitViewController.m */; };
-		D9D1ABB21309AE1A0075B7C2 /* SMSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D1ABAF1309ACC10075B7C2 /* SMSWebView.m */; };
 		D9D42AF91309AFB20054C72D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AF81309AFB20054C72D /* Foundation.framework */; };
 		D9D42AFB1309AFB60054C72D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D42AFA1309AFB60054C72D /* UIKit.framework */; };
 		D9D42AFC1309AFD50054C72D /* libSMSForceLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C829812DDED4000C5078F /* libSMSForceLoad.a */; };
@@ -88,6 +87,7 @@
 		D9FEB29715178E600093CEA6 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB29015178E600093CEA6 /* DDXMLNode.m */; };
 		D9FEB29815178E6F0093CEA6 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB28615178E600093CEA6 /* DDXMLElementAdditions.m */; };
 		D9FEB29915178E730093CEA6 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FEB28915178E600093CEA6 /* NSString+DDXML.m */; };
+		D9FEB29B15179A6C0093CEA6 /* SMSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D1ABAF1309ACC10075B7C2 /* SMSWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -615,12 +615,12 @@
 				D95C82BA12DDED5000C5078F /* UIImage+SMS.m in Sources */,
 				D917608812FB3C180000CC11 /* SMSTableView.m in Sources */,
 				D917608912FB3C1E0000CC11 /* SMSButton.m in Sources */,
-				D9D1ABB21309AE1A0075B7C2 /* SMSWebView.m in Sources */,
 				D937CBD9138180D9003AF1C5 /* NSNumber+SMS.m in Sources */,
 				D94CA21413AA4E57009A171D /* NSString+UUID.m in Sources */,
 				D92FA82A13AF7B8200FD8B7D /* NSString+XML.m in Sources */,
 				D9FEB29815178E6F0093CEA6 /* DDXMLElementAdditions.m in Sources */,
 				D9FEB29915178E730093CEA6 /* NSString+DDXML.m in Sources */,
+				D9FEB29B15179A6C0093CEA6 /* SMSWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
