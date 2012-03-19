@@ -50,6 +50,12 @@ extern SMSOrientation SMSDefaultPadRotationMask;
 @interface SMSViewController : UIViewController <SMSHTTPRequestDelegate, UITextFieldDelegate, UITextViewDelegate, UIActionSheetDelegate, UIPopoverControllerDelegate> {
     NSMutableSet *notificationObservers;
     
+    SMSHTTPRequest *httpRequest;
+    SMSLoadingView *loadingView;
+    
+    UIResponder __weak *firstResponder;
+    id popup;
+    
     UITableView *_tableView;
 }
 

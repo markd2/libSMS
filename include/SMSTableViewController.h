@@ -38,6 +38,12 @@
     UITableViewStyle tableViewStyle;
     
     NSMutableSet *notificationObservers;
+    
+    SMSHTTPRequest *httpRequest;
+    SMSLoadingView *loadingView;
+    
+    UIResponder __weak *firstResponder;
+    id popup;
 }
 @property (nonatomic, strong) SMSHTTPRequest *httpRequest;
 @property (nonatomic, strong) SMSLoadingView *loadingView;
