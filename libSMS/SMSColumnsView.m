@@ -230,7 +230,8 @@
             
             x = borderMargin + (shortestColumn * (columnWidth + columnPadding));
             thisSection.frame = CGRectMake(x, minColumnHeight, columnWidth, sectionHeight);
-            [thisSection layoutIfNeeded];
+            if (animated)
+                [thisSection layoutIfNeeded];
             columnHeights[shortestColumn] += sectionHeight + sectionPadding;
         }
         
