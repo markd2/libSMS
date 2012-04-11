@@ -14,7 +14,7 @@ typedef enum {
 
 @interface UIImage (SMS)
 
-+ (id)smsImageNamed:(NSString *)img scale:(SMSImageScale)scale;
+//+ (id)smsImageNamed:(NSString *)img scale:(SMSImageScale)scale;
 
 - (UIImage *)resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds

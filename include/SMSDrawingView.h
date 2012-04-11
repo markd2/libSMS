@@ -104,10 +104,10 @@ typedef enum SMSSegmentType {
 
 @property (nonatomic, strong) NSMutableArray *lineSegments;
 
-- (UIBarButtonItem *)lineWidthBarButtonItem;
-- (UIBarButtonItem *)lineColorBarButtonItem;
-- (UIBarButtonItem *)alphaBarButtonItem;
-- (UIBarButtonItem *)undoBarButtonItem;
+//- (UIBarButtonItem *)lineWidthBarButtonItem;
+//- (UIBarButtonItem *)lineColorBarButtonItem;
+//- (UIBarButtonItem *)alphaBarButtonItem;
+//- (UIBarButtonItem *)undoBarButtonItem;
 - (void)undoLastSegment;
 
 - (void)drawIntoContext:(CGContextRef)ctx size:(CGSize)aSize;

@@ -7,7 +7,7 @@
 
 @implementation UIImage (SMS)
 
-+ (id)smsImageNamed:(NSString *)img scale:(SMSImageScale)scale;
+/*+ (id)smsImageNamed:(NSString *)img scale:(SMSImageScale)scale;
 {
     UIImage *result = [UIImage imageNamed:img];
     
@@ -44,7 +44,7 @@
 	if (scale == SMSImageScaleOne && scaleEnabled)
 		result = [UIImage imageWithCGImage:[result CGImage] scale:1.0 orientation:UIImageOrientationUp];
 	return result;
-}
+}*/
 
 - (UIImage *)resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds
@@ -82,7 +82,11 @@
     [self drawInRect:newRect];
     
     CGImageRef newImageRef = CGBitmapContextCreateImage(context);
+#ifdef TARGET_iOS
     UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:scale orientation:self.imageOrientation];
+#else
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
+#endif
     
     UIGraphicsEndImageContext();
     CGImageRelease(newImageRef);

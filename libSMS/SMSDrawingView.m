@@ -225,7 +225,7 @@
 
 #pragma mark - Bar Button Items
 
-- (UIBarButtonItem *)lineWidthBarButtonItem
+/*- (UIBarButtonItem *)lineWidthBarButtonItem
 {
 	if (lineWidthBarButtonItem == nil) {
 		UIImageView *background = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 68, 30)];
@@ -257,14 +257,14 @@
 	}
 	
 	return lineWidthBarButtonItem;
-}
+}*/
 
 - (void)setWidth:(UISlider *)sender
 {
 	lineWidth = sender.value;
 }
 
-- (UIBarButtonItem *)lineColorBarButtonItem
+/*- (UIBarButtonItem *)lineColorBarButtonItem
 {
 	if (lineColorBarButtonItem == nil) {
 		CGImageRef colorPalette = [[UIImage smsImageNamed:@"SMSColorPalette" scale:SMSImageScaleDefault] CGImage];
@@ -308,7 +308,7 @@
 	}
 
 	return lineColorBarButtonItem;
-}
+}*/
 
 - (void)setColor:(UISlider *)sender
 {
@@ -320,7 +320,7 @@
 	self.lineColor = [UIColor colorWithRed:*r/255.0 green:*g/255.0 blue:*b/255.0 alpha:opacity];
 }
 
-- (UIBarButtonItem *)alphaBarButtonItem
+/*- (UIBarButtonItem *)alphaBarButtonItem
 {
 	if (alphaBarButtonItem == nil) {
 		UIImageView *background = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 68, 30)];
@@ -352,7 +352,7 @@
 	}
 	
 	return alphaBarButtonItem;
-}
+}*/
 
 - (void)setOpacity:(UISlider *)sender
 {
@@ -360,7 +360,7 @@
 	lineColor = [lineColor colorWithAlphaComponent:opacity];
 }
 
-- (UIBarButtonItem *)undoBarButtonItem
+/*- (UIBarButtonItem *)undoBarButtonItem
 {
 	if (undoBarButtonItem == nil) {
 		UIImage *undoImage = [UIImage smsImageNamed:@"SMSUndo" scale:SMSImageScaleDefault];
@@ -369,7 +369,7 @@
 	
 	undoBarButtonItem.enabled = ([lineSegments count] > 0);
 	return undoBarButtonItem;
-}
+}*/
 
 - (void)undoLastSegment
 {

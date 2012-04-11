@@ -134,6 +134,7 @@
                 
                 thisTile.alpha = 1.0;
                 
+                [thisTile removeTarget:self action:@selector(_selectTile:) forControlEvents:UIControlEventTouchUpInside];
                 [thisTile addTarget:self action:@selector(_selectTile:) forControlEvents:UIControlEventTouchUpInside];
                 if ([_selectedTileIndices containsIndex:i])
                     thisTile.selected = YES;
@@ -206,13 +207,11 @@
 {
     CGFloat viewWidth = self.bounds.size.width;
     CGFloat tileWidth = tileSize.width;
-    CGFloat _borderMargin = borderMargin;
-    _numberOfColumns = (viewWidth - 2*_borderMargin + minimumTilePadding) / (tileWidth + minimumTilePadding);
-    if (_numberOfColumns == 1) {
-        _borderMargin = (viewWidth-tileWidth)/2.0;
+    _numberOfColumns = (viewWidth - 2*borderMargin + minimumTilePadding) / (tileWidth + minimumTilePadding);
+    if (_numberOfColumns == 1)
         _tileMargin = minimumTilePadding;
-    } else
-        _tileMargin = (viewWidth - 2*_borderMargin - tileWidth*_numberOfColumns)/(_numberOfColumns-1.0);
+    else
+        _tileMargin = (viewWidth - 2*borderMargin - tileWidth*_numberOfColumns)/(_numberOfColumns-1.0);
     
     if (_numberOfTiles == 0)
         [self reloadTiles];

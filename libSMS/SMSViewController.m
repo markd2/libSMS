@@ -31,7 +31,10 @@
  */
 
 #import "SMSViewController.h"
+
+#ifdef TARGET_iOS
 #import "SMSLoadingView.h"
+#endif
 
 
 SMSOrientation SMSDefaultPhoneRotationMask = 0;
@@ -40,9 +43,11 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
 
 @implementation SMSViewController
 
-@synthesize httpRequest, loadingView;
+#ifdef TARGET_iOS
+@synthesize loadingView;
+#endif
 @synthesize firstResponder, popup;
-@synthesize tableView=_tableView;
+//@synthesize tableView=_tableView;
 
 #pragma mark - Class Methods
 
@@ -81,7 +86,7 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
 {
 	[super viewDidUnload];
 	self.firstResponder = nil;
-    self.tableView = nil;
+    //self.tableView = nil;
 }
 
 - (void)dealloc
@@ -90,8 +95,10 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
         [[NSNotificationCenter defaultCenter] removeObserver:observer];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    self.httpRequest = nil;
+    //self.httpRequest = nil;
+#ifdef TARGET_iOS
     self.loadingView = nil;
+#endif
     
     self.popup = nil;
 }
@@ -101,13 +108,13 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+    //[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.tableView flashScrollIndicators];
+    //[self.tableView flashScrollIndicators];
 }
 
 #pragma mark - Rotation
@@ -143,22 +150,15 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
 	self.popup = nil;
 }
 
-#pragma mark - SMSHTTPRequest
-
-- (void)setHttpRequest:(SMSHTTPRequest *)aRequest
-{
-    [httpRequest cancel];
-    httpRequest = aRequest;
-    httpRequest.delegate = self;
-}
-
 #pragma mark - Loading View
 
+#ifdef TARGET_iOS
 - (void)setLoadingView:(SMSLoadingView *)lv
 {
     [loadingView dismiss];
     loadingView = lv;
 }
+#endif
 
 #pragma mark - First Responder
 
@@ -247,6 +247,70 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
 {
 	if (pc == popup)
         popup = nil;
+}
+
+#pragma mark - UIScrollView delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (!shadow)
+        return;
+    
+    if (!scrollView.dragging)
+        return;
+    
+    static CGFloat yOffset = 0;
+    
+    CGFloat diff = scrollView.contentOffset.y - yOffset;
+    if (diff > 2) {
+        [UIView animateWithDuration:0.2
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             shadow.alpha = 1.0;
+                         }
+                         completion:nil];
+        yOffset = scrollView.contentOffset.y;
+    } else if (diff < -2) {
+        [UIView animateWithDuration:0.2
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             shadow.alpha = 0.0;
+                         }
+                         completion:nil];
+        yOffset = 0;
+    }
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (!shadow)
+        return;
+    
+    if (!decelerate) {
+        [UIView animateWithDuration:0.5
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             shadow.alpha = 0.0;
+                         }
+                         completion:nil];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if (!shadow)
+        return;
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         shadow.alpha = 0.0;
+                     }
+                     completion:nil];
 }
 
 @end

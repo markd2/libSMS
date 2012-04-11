@@ -31,8 +31,10 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "SMSHTTPRequest.h"
+
+#ifdef TARGET_iOS
 @class SMSLoadingView;
+#endif
 
 
 typedef enum SMSOrientation {
@@ -47,25 +49,27 @@ extern SMSOrientation SMSDefaultPhoneRotationMask;
 extern SMSOrientation SMSDefaultPadRotationMask;
 
 
-@interface SMSViewController : UIViewController <SMSHTTPRequestDelegate, UITextFieldDelegate, UITextViewDelegate, UIActionSheetDelegate, UIPopoverControllerDelegate> {
+@interface SMSViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIActionSheetDelegate, UIPopoverControllerDelegate> {
     NSMutableSet *notificationObservers;
     
-    SMSHTTPRequest *httpRequest;
-    SMSLoadingView *loadingView;
+    //SMSHTTPRequest *httpRequest;
+    //SMSLoadingView *loadingView;
     
     UIResponder __weak *firstResponder;
     id popup;
     
-    UITableView *_tableView;
+    //UITableView *_tableView;
+    
+    UIImageView *shadow;
 }
-
-@property (nonatomic, strong) SMSHTTPRequest *httpRequest;
+#ifdef TARGET_iOS
 @property (nonatomic, strong) SMSLoadingView *loadingView;
+#endif
 
 @property (nonatomic, weak) UIResponder *firstResponder;
 @property (nonatomic, strong) id popup;
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+//@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 + (void)setDefaultRotationMask:(SMSOrientation)aRotationMask;
 + (void)setDefaultPhoneRotationMask:(SMSOrientation)aRotationMask;
