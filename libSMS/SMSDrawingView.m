@@ -159,6 +159,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    DebugLog(@"");
 	UITouch *touch = [touches anyObject];
 	CGPoint p = [touch locationInView:self];
 
@@ -192,8 +193,6 @@
     SMSPoint *lastPoint = [currentLineSegment.points lastObject];
 	if (touch.timestamp-lastPoint.timestamp > 0.03) {
         CGPoint p = [touch locationInView:self];
-        
-        currentLineSegment.segmentType = SMSSegmentTypeLine;
         
         SMSPoint *newPoint = [[SMSPoint alloc] init];
         newPoint.x = p.x;
