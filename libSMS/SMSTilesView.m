@@ -328,7 +328,7 @@
     }];
     [_tiles insertObjects:insertedTiles atIndexes:i];
     
-    NSMutableIndexSet newSelectedIndices = [NSMutableIndexSet indexSet];
+    NSMutableIndexSet *newSelectedIndices = [NSMutableIndexSet indexSet];
     [_selectedTileIndices enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx2, BOOL *stop) {
             if (idx2 <= idx)
@@ -337,6 +337,7 @@
                 [newSelectedIndices addIndex:idx];
         }];
     }];
+    _selectedTileIndices = newSelectedIndices;
     
     _numberOfTiles = [_tiles count];
     
@@ -365,7 +366,7 @@
 
 - (void)removeTilesAtIndices:(NSIndexSet *)i animated:(BOOL)animated
 {
-    NSMutableIndexSet newSelectedIndices = [NSMutableIndexSet indexSet];
+    NSMutableIndexSet *newSelectedIndices = [NSMutableIndexSet indexSet];
     [_selectedTileIndices enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx2, BOOL *stop) {
             if (idx2 < idx)
@@ -374,6 +375,7 @@
                 [newSelectedIndices addIndex:idx];
         }];
     }];
+    _selectedTileIndices = newSelectedIndices;
     
     NSArray *removedTiles = [_tiles objectsAtIndexes:i];
     
