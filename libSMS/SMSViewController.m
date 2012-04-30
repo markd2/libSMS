@@ -174,7 +174,7 @@ SMSOrientation SMSDefaultPadRotationMask = 0;
 	if (firstResponder)
 		self.firstResponder = nil;
 	else
-		[super touchesBegan:touches withEvent:event];
+        [super touchesBegan:touches withEvent:event];
 }
 
 #pragma mark - UITextField delegate
