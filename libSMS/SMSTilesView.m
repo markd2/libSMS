@@ -178,6 +178,8 @@
 - (void)_selectTile:(SMSTile *)sender
 {
     NSUInteger i = [_tiles indexOfObject:sender];
+    if (i == NSNotFound)
+        return;
     
     if (!sender.selected) {
         sender.selected = YES;
