@@ -32,7 +32,6 @@
 
 #import "SMSTilesView.h"
 
-
 @implementation SMSTile
 
 @synthesize reuseIdentifier;
@@ -134,6 +133,7 @@
                 
                 thisTile.alpha = 1.0;
                 
+                [thisTile removeTarget:self action:@selector(_selectTile:) forControlEvents:UIControlEventTouchUpInside];
                 [thisTile addTarget:self action:@selector(_selectTile:) forControlEvents:UIControlEventTouchUpInside];
                 if ([_selectedTileIndices containsIndex:i])
                     thisTile.selected = YES;
@@ -177,6 +177,8 @@
 - (void)_selectTile:(SMSTile *)sender
 {
     NSUInteger i = [_tiles indexOfObject:sender];
+    if (i == NSNotFound)
+        return;
     
     if (!sender.selected) {
         sender.selected = YES;
@@ -206,13 +208,11 @@
 {
     CGFloat viewWidth = self.bounds.size.width;
     CGFloat tileWidth = tileSize.width;
-    CGFloat _borderMargin = borderMargin;
-    _numberOfColumns = (viewWidth - 2*_borderMargin + minimumTilePadding) / (tileWidth + minimumTilePadding);
-    if (_numberOfColumns == 1) {
-        _borderMargin = (viewWidth-tileWidth)/2.0;
+    _numberOfColumns = (viewWidth - 2*borderMargin + minimumTilePadding) / (tileWidth + minimumTilePadding);
+    if (_numberOfColumns == 1)
         _tileMargin = minimumTilePadding;
-    } else
-        _tileMargin = (viewWidth - 2*_borderMargin - tileWidth*_numberOfColumns)/(_numberOfColumns-1.0);
+    else
+        _tileMargin = (viewWidth - 2*borderMargin - tileWidth*_numberOfColumns)/(_numberOfColumns-1.0);
     
     if (_numberOfTiles == 0)
         [self reloadTiles];
@@ -329,7 +329,7 @@
     }];
     [_tiles insertObjects:insertedTiles atIndexes:i];
     
-    NSMutableIndexSet newSelectedIndices = [NSMutableIndexSet indexSet];
+    NSMutableIndexSet *newSelectedIndices = [NSMutableIndexSet indexSet];
     [_selectedTileIndices enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx2, BOOL *stop) {
             if (idx2 <= idx)
@@ -338,6 +338,7 @@
                 [newSelectedIndices addIndex:idx];
         }];
     }];
+    _selectedTileIndices = newSelectedIndices;
     
     _numberOfTiles = [_tiles count];
     
@@ -366,7 +367,10 @@
 
 - (void)removeTilesAtIndices:(NSIndexSet *)i animated:(BOOL)animated
 {
-    NSMutableIndexSet newSelectedIndices = [NSMutableIndexSet indexSet];
+    if ([_tiles count] == 0)
+        return;
+    
+    NSMutableIndexSet *newSelectedIndices = [NSMutableIndexSet indexSet];
     [_selectedTileIndices enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx2, BOOL *stop) {
             if (idx2 < idx)
@@ -375,6 +379,7 @@
                 [newSelectedIndices addIndex:idx];
         }];
     }];
+    _selectedTileIndices = newSelectedIndices;
     
     NSArray *removedTiles = [_tiles objectsAtIndexes:i];
     
@@ -491,11 +496,16 @@
 
 - (void)deselectTilesAtIndices:(NSIndexSet *)i animated:(BOOL)animated
 {
+    if ([_tiles count] == 0)
+        return;
+    
     void (^selection)(void) = ^ {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
-            SMSTile *tile = [_tiles objectAtIndex:idx];
-            if ((NSNull *)tile != [NSNull null])
-                tile.selected = NO;
+            if (idx < [_tiles count]) {
+                SMSTile *tile = [_tiles objectAtIndex:idx];
+                if ((NSNull *)tile != [NSNull null])
+                    tile.selected = NO;
+            }
         }];
     };
     
