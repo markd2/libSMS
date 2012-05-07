@@ -368,6 +368,9 @@
 
 - (void)removeTilesAtIndices:(NSIndexSet *)i animated:(BOOL)animated
 {
+    if ([_tiles count] == 0)
+        return;
+    
     NSMutableIndexSet *newSelectedIndices = [NSMutableIndexSet indexSet];
     [_selectedTileIndices enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx2, BOOL *stop) {
