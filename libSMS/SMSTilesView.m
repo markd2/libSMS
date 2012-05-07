@@ -497,11 +497,16 @@
 
 - (void)deselectTilesAtIndices:(NSIndexSet *)i animated:(BOOL)animated
 {
+    if ([_tiles count] == 0)
+        return;
+    
     void (^selection)(void) = ^ {
         [i enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
-            SMSTile *tile = [_tiles objectAtIndex:idx];
-            if ((NSNull *)tile != [NSNull null])
-                tile.selected = NO;
+            if (idx < [_tiles count]) {
+                SMSTile *tile = [_tiles objectAtIndex:idx];
+                if ((NSNull *)tile != [NSNull null])
+                    tile.selected = NO;
+            }
         }];
     };
     
