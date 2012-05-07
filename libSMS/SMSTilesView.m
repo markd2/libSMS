@@ -32,7 +32,6 @@
 
 #import "SMSTilesView.h"
 
-
 @implementation SMSTile
 
 @synthesize reuseIdentifier;
