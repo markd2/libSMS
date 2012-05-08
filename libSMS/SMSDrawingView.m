@@ -267,7 +267,8 @@
 - (UIBarButtonItem *)lineColorBarButtonItem
 {
 	if (lineColorBarButtonItem == nil) {
-		CGImageRef colorPalette = [[UIImage smsImageNamed:@"SMSColorPalette" scale:SMSImageScaleDefault] CGImage];
+        UIImage *cp = [UIImage smsImageNamed:@"SMSColorPalette" scale:SMSImageScaleDefault];
+		CGImageRef colorPalette = [cp CGImage];
 		CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
 		int w = CGImageGetWidth(colorPalette);
 		int comps = CGImageGetBitsPerPixel(colorPalette) / CGImageGetBitsPerComponent(colorPalette);
