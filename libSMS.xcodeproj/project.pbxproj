@@ -41,32 +41,36 @@
 		D95C82A612DDED5000C5078F /* NSDate+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DF4241242DE6800A48840 /* NSDate+SMS.m */; };
 		D95C82A812DDED5000C5078F /* NSDateFormatter+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DEECC124161DC00A48840 /* NSDateFormatter+SMS.m */; };
 		D95C82BA12DDED5000C5078F /* UIImage+SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = A74DC46512258B2E0092894C /* UIImage+SMS.m */; };
+		D9893AAD155985040085012A /* 1-blank-px.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A90155985040085012A /* 1-blank-px.png */; };
+		D9893AAE155985040085012A /* LineSlider@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A91155985040085012A /* LineSlider@2x~ipad.png */; };
+		D9893AAF155985040085012A /* SMSAlphaSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A92155985040085012A /* SMSAlphaSlider.png */; };
+		D9893AB0155985040085012A /* SMSAlphaSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A93155985040085012A /* SMSAlphaSlider@2x.png */; };
+		D9893AB1155985040085012A /* SMSAlphaSlider@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A94155985040085012A /* SMSAlphaSlider@2x~ipad.png */; };
+		D9893AB2155985040085012A /* SMSAlphaSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A95155985040085012A /* SMSAlphaSlider~ipad.png */; };
+		D9893AB3155985040085012A /* SMSChatField.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A96155985040085012A /* SMSChatField.png */; };
+		D9893AB4155985040085012A /* SMSChatField@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A97155985040085012A /* SMSChatField@2x.png */; };
+		D9893AB5155985040085012A /* SMSColorPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A98155985040085012A /* SMSColorPalette.png */; };
+		D9893AB6155985040085012A /* SMSColorPalette~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A99155985040085012A /* SMSColorPalette~ipad.png */; };
+		D9893AB7155985040085012A /* SMSColorSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A9A155985040085012A /* SMSColorSlider.png */; };
+		D9893AB8155985040085012A /* SMSColorSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A9B155985040085012A /* SMSColorSlider@2x.png */; };
+		D9893AB9155985040085012A /* SMSColorSlider@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A9C155985040085012A /* SMSColorSlider@2x~ipad.png */; };
+		D9893ABA155985040085012A /* SMSColorSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A9D155985040085012A /* SMSColorSlider~ipad.png */; };
+		D9893ABB155985040085012A /* SMSIncomingTextBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A9E155985040085012A /* SMSIncomingTextBubble.png */; };
+		D9893ABC155985040085012A /* SMSIncomingTextBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893A9F155985040085012A /* SMSIncomingTextBubble@2x.png */; };
+		D9893ABD155985040085012A /* SMSLineSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA0155985040085012A /* SMSLineSlider.png */; };
+		D9893ABE155985040085012A /* SMSLineSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA1155985040085012A /* SMSLineSlider@2x.png */; };
+		D9893ABF155985040085012A /* SMSLineSlider@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA2155985040085012A /* SMSLineSlider@2x~ipad.png */; };
+		D9893AC0155985040085012A /* SMSLineSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA3155985040085012A /* SMSLineSlider~ipad.png */; };
+		D9893AC1155985040085012A /* SMSOutgoingTextBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA4155985040085012A /* SMSOutgoingTextBubble.png */; };
+		D9893AC2155985040085012A /* SMSOutgoingTextBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA5155985040085012A /* SMSOutgoingTextBubble@2x.png */; };
+		D9893AC3155985040085012A /* SMSSendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA6155985040085012A /* SMSSendButton.png */; };
+		D9893AC4155985040085012A /* SMSSendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA7155985040085012A /* SMSSendButton@2x.png */; };
+		D9893AC5155985040085012A /* SMSSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA8155985040085012A /* SMSSliderThumb.png */; };
+		D9893AC6155985040085012A /* SMSSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AA9155985040085012A /* SMSSliderThumb@2x.png */; };
+		D9893AC7155985040085012A /* SMSSliderThumb~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AAA155985040085012A /* SMSSliderThumb~ipad.png */; };
+		D9893AC8155985040085012A /* SMSUndo.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AAB155985040085012A /* SMSUndo.png */; };
+		D9893AC9155985040085012A /* SMSUndo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9893AAC155985040085012A /* SMSUndo@2x.png */; };
 		D98A963613295E2200268CCA /* SMSChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98A963513295E2200268CCA /* SMSChatViewController.m */; };
-		D9A18B1815176C9B00B1C7DE /* 1-blank-px.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18AFF15176C9B00B1C7DE /* 1-blank-px.png */; };
-		D9A18B1915176C9B00B1C7DE /* SMSAlphaSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0015176C9B00B1C7DE /* SMSAlphaSlider.png */; };
-		D9A18B1A15176C9B00B1C7DE /* SMSAlphaSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0115176C9B00B1C7DE /* SMSAlphaSlider@2x.png */; };
-		D9A18B1B15176C9B00B1C7DE /* SMSAlphaSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0215176C9B00B1C7DE /* SMSAlphaSlider~ipad.png */; };
-		D9A18B1C15176C9B00B1C7DE /* SMSChatField.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0315176C9B00B1C7DE /* SMSChatField.png */; };
-		D9A18B1D15176C9B00B1C7DE /* SMSChatField@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0415176C9B00B1C7DE /* SMSChatField@2x.png */; };
-		D9A18B1E15176C9B00B1C7DE /* SMSColorPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0515176C9B00B1C7DE /* SMSColorPalette.png */; };
-		D9A18B1F15176C9B00B1C7DE /* SMSColorPalette~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0615176C9B00B1C7DE /* SMSColorPalette~ipad.png */; };
-		D9A18B2015176C9B00B1C7DE /* SMSColorSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0715176C9B00B1C7DE /* SMSColorSlider.png */; };
-		D9A18B2115176C9B00B1C7DE /* SMSColorSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0815176C9B00B1C7DE /* SMSColorSlider@2x.png */; };
-		D9A18B2215176C9B00B1C7DE /* SMSColorSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0915176C9B00B1C7DE /* SMSColorSlider~ipad.png */; };
-		D9A18B2315176C9B00B1C7DE /* SMSIncomingTextBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0A15176C9B00B1C7DE /* SMSIncomingTextBubble.png */; };
-		D9A18B2415176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0B15176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png */; };
-		D9A18B2515176C9B00B1C7DE /* SMSLineSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0C15176C9B00B1C7DE /* SMSLineSlider.png */; };
-		D9A18B2615176C9B00B1C7DE /* SMSLineSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0D15176C9B00B1C7DE /* SMSLineSlider@2x.png */; };
-		D9A18B2715176C9B00B1C7DE /* SMSLineSlider~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0E15176C9B00B1C7DE /* SMSLineSlider~ipad.png */; };
-		D9A18B2815176C9B00B1C7DE /* SMSOutgoingTextBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B0F15176C9B00B1C7DE /* SMSOutgoingTextBubble.png */; };
-		D9A18B2915176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1015176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png */; };
-		D9A18B2A15176C9B00B1C7DE /* SMSSendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1115176C9B00B1C7DE /* SMSSendButton.png */; };
-		D9A18B2B15176C9B00B1C7DE /* SMSSendButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1215176C9B00B1C7DE /* SMSSendButton@2x.png */; };
-		D9A18B2C15176C9B00B1C7DE /* SMSSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1315176C9B00B1C7DE /* SMSSliderThumb.png */; };
-		D9A18B2D15176C9B00B1C7DE /* SMSSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1415176C9B00B1C7DE /* SMSSliderThumb@2x.png */; };
-		D9A18B2E15176C9B00B1C7DE /* SMSSliderThumb~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1515176C9B00B1C7DE /* SMSSliderThumb~ipad.png */; };
-		D9A18B2F15176C9B00B1C7DE /* SMSUndo.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1615176C9B00B1C7DE /* SMSUndo.png */; };
-		D9A18B3015176C9B00B1C7DE /* SMSUndo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A18B1715176C9B00B1C7DE /* SMSUndo@2x.png */; };
 		D9A18B3E1517784100B1C7DE /* SMSColumnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3B1517784000B1C7DE /* SMSColumnsView.m */; };
 		D9A18B3F1517784100B1C7DE /* SMSTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3C1517784000B1C7DE /* SMSTagsView.m */; };
 		D9A18B401517784100B1C7DE /* SMSTilesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A18B3D1517784000B1C7DE /* SMSTilesView.m */; };
@@ -137,33 +141,37 @@
 		D937CBD8138180D9003AF1C5 /* NSNumber+SMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+SMS.m"; path = "libSMS/NSNumber+SMS.m"; sourceTree = "<group>"; };
 		D937CBDA138197D1003AF1C5 /* NSNumber+SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+SMS.h"; path = "include/NSNumber+SMS.h"; sourceTree = "<group>"; };
 		D95C829812DDED4000C5078F /* libSMSForceLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMSForceLoad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9893A90155985040085012A /* 1-blank-px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-blank-px.png"; path = "Images/1-blank-px.png"; sourceTree = "<group>"; };
+		D9893A91155985040085012A /* LineSlider@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LineSlider@2x~ipad.png"; path = "Images/LineSlider@2x~ipad.png"; sourceTree = "<group>"; };
+		D9893A92155985040085012A /* SMSAlphaSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSAlphaSlider.png; path = Images/SMSAlphaSlider.png; sourceTree = "<group>"; };
+		D9893A93155985040085012A /* SMSAlphaSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider@2x.png"; path = "Images/SMSAlphaSlider@2x.png"; sourceTree = "<group>"; };
+		D9893A94155985040085012A /* SMSAlphaSlider@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider@2x~ipad.png"; path = "Images/SMSAlphaSlider@2x~ipad.png"; sourceTree = "<group>"; };
+		D9893A95155985040085012A /* SMSAlphaSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider~ipad.png"; path = "Images/SMSAlphaSlider~ipad.png"; sourceTree = "<group>"; };
+		D9893A96155985040085012A /* SMSChatField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSChatField.png; path = Images/SMSChatField.png; sourceTree = "<group>"; };
+		D9893A97155985040085012A /* SMSChatField@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSChatField@2x.png"; path = "Images/SMSChatField@2x.png"; sourceTree = "<group>"; };
+		D9893A98155985040085012A /* SMSColorPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSColorPalette.png; path = Images/SMSColorPalette.png; sourceTree = "<group>"; };
+		D9893A99155985040085012A /* SMSColorPalette~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorPalette~ipad.png"; path = "Images/SMSColorPalette~ipad.png"; sourceTree = "<group>"; };
+		D9893A9A155985040085012A /* SMSColorSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSColorSlider.png; path = Images/SMSColorSlider.png; sourceTree = "<group>"; };
+		D9893A9B155985040085012A /* SMSColorSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider@2x.png"; path = "Images/SMSColorSlider@2x.png"; sourceTree = "<group>"; };
+		D9893A9C155985040085012A /* SMSColorSlider@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider@2x~ipad.png"; path = "Images/SMSColorSlider@2x~ipad.png"; sourceTree = "<group>"; };
+		D9893A9D155985040085012A /* SMSColorSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider~ipad.png"; path = "Images/SMSColorSlider~ipad.png"; sourceTree = "<group>"; };
+		D9893A9E155985040085012A /* SMSIncomingTextBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSIncomingTextBubble.png; path = Images/SMSIncomingTextBubble.png; sourceTree = "<group>"; };
+		D9893A9F155985040085012A /* SMSIncomingTextBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSIncomingTextBubble@2x.png"; path = "Images/SMSIncomingTextBubble@2x.png"; sourceTree = "<group>"; };
+		D9893AA0155985040085012A /* SMSLineSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSLineSlider.png; path = Images/SMSLineSlider.png; sourceTree = "<group>"; };
+		D9893AA1155985040085012A /* SMSLineSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider@2x.png"; path = "Images/SMSLineSlider@2x.png"; sourceTree = "<group>"; };
+		D9893AA2155985040085012A /* SMSLineSlider@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider@2x~ipad.png"; path = "Images/SMSLineSlider@2x~ipad.png"; sourceTree = "<group>"; };
+		D9893AA3155985040085012A /* SMSLineSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider~ipad.png"; path = "Images/SMSLineSlider~ipad.png"; sourceTree = "<group>"; };
+		D9893AA4155985040085012A /* SMSOutgoingTextBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSOutgoingTextBubble.png; path = Images/SMSOutgoingTextBubble.png; sourceTree = "<group>"; };
+		D9893AA5155985040085012A /* SMSOutgoingTextBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSOutgoingTextBubble@2x.png"; path = "Images/SMSOutgoingTextBubble@2x.png"; sourceTree = "<group>"; };
+		D9893AA6155985040085012A /* SMSSendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSSendButton.png; path = Images/SMSSendButton.png; sourceTree = "<group>"; };
+		D9893AA7155985040085012A /* SMSSendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSendButton@2x.png"; path = "Images/SMSSendButton@2x.png"; sourceTree = "<group>"; };
+		D9893AA8155985040085012A /* SMSSliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSSliderThumb.png; path = Images/SMSSliderThumb.png; sourceTree = "<group>"; };
+		D9893AA9155985040085012A /* SMSSliderThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSliderThumb@2x.png"; path = "Images/SMSSliderThumb@2x.png"; sourceTree = "<group>"; };
+		D9893AAA155985040085012A /* SMSSliderThumb~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSliderThumb~ipad.png"; path = "Images/SMSSliderThumb~ipad.png"; sourceTree = "<group>"; };
+		D9893AAB155985040085012A /* SMSUndo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSUndo.png; path = Images/SMSUndo.png; sourceTree = "<group>"; };
+		D9893AAC155985040085012A /* SMSUndo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSUndo@2x.png"; path = "Images/SMSUndo@2x.png"; sourceTree = "<group>"; };
 		D98A963413295E2200268CCA /* SMSChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSChatViewController.h; path = include/SMSChatViewController.h; sourceTree = "<group>"; };
 		D98A963513295E2200268CCA /* SMSChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSChatViewController.m; path = libSMS/SMSChatViewController.m; sourceTree = "<group>"; };
-		D9A18AFF15176C9B00B1C7DE /* 1-blank-px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-blank-px.png"; path = "Images/1-blank-px.png"; sourceTree = "<group>"; };
-		D9A18B0015176C9B00B1C7DE /* SMSAlphaSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSAlphaSlider.png; path = Images/SMSAlphaSlider.png; sourceTree = "<group>"; };
-		D9A18B0115176C9B00B1C7DE /* SMSAlphaSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider@2x.png"; path = "Images/SMSAlphaSlider@2x.png"; sourceTree = "<group>"; };
-		D9A18B0215176C9B00B1C7DE /* SMSAlphaSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSAlphaSlider~ipad.png"; path = "Images/SMSAlphaSlider~ipad.png"; sourceTree = "<group>"; };
-		D9A18B0315176C9B00B1C7DE /* SMSChatField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSChatField.png; path = Images/SMSChatField.png; sourceTree = "<group>"; };
-		D9A18B0415176C9B00B1C7DE /* SMSChatField@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSChatField@2x.png"; path = "Images/SMSChatField@2x.png"; sourceTree = "<group>"; };
-		D9A18B0515176C9B00B1C7DE /* SMSColorPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSColorPalette.png; path = Images/SMSColorPalette.png; sourceTree = "<group>"; };
-		D9A18B0615176C9B00B1C7DE /* SMSColorPalette~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorPalette~ipad.png"; path = "Images/SMSColorPalette~ipad.png"; sourceTree = "<group>"; };
-		D9A18B0715176C9B00B1C7DE /* SMSColorSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSColorSlider.png; path = Images/SMSColorSlider.png; sourceTree = "<group>"; };
-		D9A18B0815176C9B00B1C7DE /* SMSColorSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider@2x.png"; path = "Images/SMSColorSlider@2x.png"; sourceTree = "<group>"; };
-		D9A18B0915176C9B00B1C7DE /* SMSColorSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSColorSlider~ipad.png"; path = "Images/SMSColorSlider~ipad.png"; sourceTree = "<group>"; };
-		D9A18B0A15176C9B00B1C7DE /* SMSIncomingTextBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSIncomingTextBubble.png; path = Images/SMSIncomingTextBubble.png; sourceTree = "<group>"; };
-		D9A18B0B15176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSIncomingTextBubble@2x.png"; path = "Images/SMSIncomingTextBubble@2x.png"; sourceTree = "<group>"; };
-		D9A18B0C15176C9B00B1C7DE /* SMSLineSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSLineSlider.png; path = Images/SMSLineSlider.png; sourceTree = "<group>"; };
-		D9A18B0D15176C9B00B1C7DE /* SMSLineSlider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider@2x.png"; path = "Images/SMSLineSlider@2x.png"; sourceTree = "<group>"; };
-		D9A18B0E15176C9B00B1C7DE /* SMSLineSlider~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSLineSlider~ipad.png"; path = "Images/SMSLineSlider~ipad.png"; sourceTree = "<group>"; };
-		D9A18B0F15176C9B00B1C7DE /* SMSOutgoingTextBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSOutgoingTextBubble.png; path = Images/SMSOutgoingTextBubble.png; sourceTree = "<group>"; };
-		D9A18B1015176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSOutgoingTextBubble@2x.png"; path = "Images/SMSOutgoingTextBubble@2x.png"; sourceTree = "<group>"; };
-		D9A18B1115176C9B00B1C7DE /* SMSSendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSSendButton.png; path = Images/SMSSendButton.png; sourceTree = "<group>"; };
-		D9A18B1215176C9B00B1C7DE /* SMSSendButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSendButton@2x.png"; path = "Images/SMSSendButton@2x.png"; sourceTree = "<group>"; };
-		D9A18B1315176C9B00B1C7DE /* SMSSliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSSliderThumb.png; path = Images/SMSSliderThumb.png; sourceTree = "<group>"; };
-		D9A18B1415176C9B00B1C7DE /* SMSSliderThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSliderThumb@2x.png"; path = "Images/SMSSliderThumb@2x.png"; sourceTree = "<group>"; };
-		D9A18B1515176C9B00B1C7DE /* SMSSliderThumb~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSSliderThumb~ipad.png"; path = "Images/SMSSliderThumb~ipad.png"; sourceTree = "<group>"; };
-		D9A18B1615176C9B00B1C7DE /* SMSUndo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SMSUndo.png; path = Images/SMSUndo.png; sourceTree = "<group>"; };
-		D9A18B1715176C9B00B1C7DE /* SMSUndo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SMSUndo@2x.png"; path = "Images/SMSUndo@2x.png"; sourceTree = "<group>"; };
 		D9A18B3B1517784000B1C7DE /* SMSColumnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSColumnsView.m; path = libSMS/SMSColumnsView.m; sourceTree = "<group>"; };
 		D9A18B3C1517784000B1C7DE /* SMSTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSTagsView.m; path = libSMS/SMSTagsView.m; sourceTree = "<group>"; };
 		D9A18B3D1517784000B1C7DE /* SMSTilesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSTilesView.m; path = libSMS/SMSTilesView.m; sourceTree = "<group>"; };
@@ -272,31 +280,35 @@
 		A74DC420122589D50092894C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D9A18AFF15176C9B00B1C7DE /* 1-blank-px.png */,
-				D9A18B0015176C9B00B1C7DE /* SMSAlphaSlider.png */,
-				D9A18B0115176C9B00B1C7DE /* SMSAlphaSlider@2x.png */,
-				D9A18B0215176C9B00B1C7DE /* SMSAlphaSlider~ipad.png */,
-				D9A18B0315176C9B00B1C7DE /* SMSChatField.png */,
-				D9A18B0415176C9B00B1C7DE /* SMSChatField@2x.png */,
-				D9A18B0515176C9B00B1C7DE /* SMSColorPalette.png */,
-				D9A18B0615176C9B00B1C7DE /* SMSColorPalette~ipad.png */,
-				D9A18B0715176C9B00B1C7DE /* SMSColorSlider.png */,
-				D9A18B0815176C9B00B1C7DE /* SMSColorSlider@2x.png */,
-				D9A18B0915176C9B00B1C7DE /* SMSColorSlider~ipad.png */,
-				D9A18B0A15176C9B00B1C7DE /* SMSIncomingTextBubble.png */,
-				D9A18B0B15176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png */,
-				D9A18B0C15176C9B00B1C7DE /* SMSLineSlider.png */,
-				D9A18B0D15176C9B00B1C7DE /* SMSLineSlider@2x.png */,
-				D9A18B0E15176C9B00B1C7DE /* SMSLineSlider~ipad.png */,
-				D9A18B0F15176C9B00B1C7DE /* SMSOutgoingTextBubble.png */,
-				D9A18B1015176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png */,
-				D9A18B1115176C9B00B1C7DE /* SMSSendButton.png */,
-				D9A18B1215176C9B00B1C7DE /* SMSSendButton@2x.png */,
-				D9A18B1315176C9B00B1C7DE /* SMSSliderThumb.png */,
-				D9A18B1415176C9B00B1C7DE /* SMSSliderThumb@2x.png */,
-				D9A18B1515176C9B00B1C7DE /* SMSSliderThumb~ipad.png */,
-				D9A18B1615176C9B00B1C7DE /* SMSUndo.png */,
-				D9A18B1715176C9B00B1C7DE /* SMSUndo@2x.png */,
+				D9893A90155985040085012A /* 1-blank-px.png */,
+				D9893A91155985040085012A /* LineSlider@2x~ipad.png */,
+				D9893A92155985040085012A /* SMSAlphaSlider.png */,
+				D9893A93155985040085012A /* SMSAlphaSlider@2x.png */,
+				D9893A94155985040085012A /* SMSAlphaSlider@2x~ipad.png */,
+				D9893A95155985040085012A /* SMSAlphaSlider~ipad.png */,
+				D9893A96155985040085012A /* SMSChatField.png */,
+				D9893A97155985040085012A /* SMSChatField@2x.png */,
+				D9893A98155985040085012A /* SMSColorPalette.png */,
+				D9893A99155985040085012A /* SMSColorPalette~ipad.png */,
+				D9893A9A155985040085012A /* SMSColorSlider.png */,
+				D9893A9B155985040085012A /* SMSColorSlider@2x.png */,
+				D9893A9C155985040085012A /* SMSColorSlider@2x~ipad.png */,
+				D9893A9D155985040085012A /* SMSColorSlider~ipad.png */,
+				D9893A9E155985040085012A /* SMSIncomingTextBubble.png */,
+				D9893A9F155985040085012A /* SMSIncomingTextBubble@2x.png */,
+				D9893AA0155985040085012A /* SMSLineSlider.png */,
+				D9893AA1155985040085012A /* SMSLineSlider@2x.png */,
+				D9893AA2155985040085012A /* SMSLineSlider@2x~ipad.png */,
+				D9893AA3155985040085012A /* SMSLineSlider~ipad.png */,
+				D9893AA4155985040085012A /* SMSOutgoingTextBubble.png */,
+				D9893AA5155985040085012A /* SMSOutgoingTextBubble@2x.png */,
+				D9893AA6155985040085012A /* SMSSendButton.png */,
+				D9893AA7155985040085012A /* SMSSendButton@2x.png */,
+				D9893AA8155985040085012A /* SMSSliderThumb.png */,
+				D9893AA9155985040085012A /* SMSSliderThumb@2x.png */,
+				D9893AAA155985040085012A /* SMSSliderThumb~ipad.png */,
+				D9893AAB155985040085012A /* SMSUndo.png */,
+				D9893AAC155985040085012A /* SMSUndo@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -531,31 +543,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A18B1815176C9B00B1C7DE /* 1-blank-px.png in Resources */,
-				D9A18B1915176C9B00B1C7DE /* SMSAlphaSlider.png in Resources */,
-				D9A18B1A15176C9B00B1C7DE /* SMSAlphaSlider@2x.png in Resources */,
-				D9A18B1B15176C9B00B1C7DE /* SMSAlphaSlider~ipad.png in Resources */,
-				D9A18B1C15176C9B00B1C7DE /* SMSChatField.png in Resources */,
-				D9A18B1D15176C9B00B1C7DE /* SMSChatField@2x.png in Resources */,
-				D9A18B1E15176C9B00B1C7DE /* SMSColorPalette.png in Resources */,
-				D9A18B1F15176C9B00B1C7DE /* SMSColorPalette~ipad.png in Resources */,
-				D9A18B2015176C9B00B1C7DE /* SMSColorSlider.png in Resources */,
-				D9A18B2115176C9B00B1C7DE /* SMSColorSlider@2x.png in Resources */,
-				D9A18B2215176C9B00B1C7DE /* SMSColorSlider~ipad.png in Resources */,
-				D9A18B2315176C9B00B1C7DE /* SMSIncomingTextBubble.png in Resources */,
-				D9A18B2415176C9B00B1C7DE /* SMSIncomingTextBubble@2x.png in Resources */,
-				D9A18B2515176C9B00B1C7DE /* SMSLineSlider.png in Resources */,
-				D9A18B2615176C9B00B1C7DE /* SMSLineSlider@2x.png in Resources */,
-				D9A18B2715176C9B00B1C7DE /* SMSLineSlider~ipad.png in Resources */,
-				D9A18B2815176C9B00B1C7DE /* SMSOutgoingTextBubble.png in Resources */,
-				D9A18B2915176C9B00B1C7DE /* SMSOutgoingTextBubble@2x.png in Resources */,
-				D9A18B2A15176C9B00B1C7DE /* SMSSendButton.png in Resources */,
-				D9A18B2B15176C9B00B1C7DE /* SMSSendButton@2x.png in Resources */,
-				D9A18B2C15176C9B00B1C7DE /* SMSSliderThumb.png in Resources */,
-				D9A18B2D15176C9B00B1C7DE /* SMSSliderThumb@2x.png in Resources */,
-				D9A18B2E15176C9B00B1C7DE /* SMSSliderThumb~ipad.png in Resources */,
-				D9A18B2F15176C9B00B1C7DE /* SMSUndo.png in Resources */,
-				D9A18B3015176C9B00B1C7DE /* SMSUndo@2x.png in Resources */,
+				D9893AAD155985040085012A /* 1-blank-px.png in Resources */,
+				D9893AAE155985040085012A /* LineSlider@2x~ipad.png in Resources */,
+				D9893AAF155985040085012A /* SMSAlphaSlider.png in Resources */,
+				D9893AB0155985040085012A /* SMSAlphaSlider@2x.png in Resources */,
+				D9893AB1155985040085012A /* SMSAlphaSlider@2x~ipad.png in Resources */,
+				D9893AB2155985040085012A /* SMSAlphaSlider~ipad.png in Resources */,
+				D9893AB3155985040085012A /* SMSChatField.png in Resources */,
+				D9893AB4155985040085012A /* SMSChatField@2x.png in Resources */,
+				D9893AB5155985040085012A /* SMSColorPalette.png in Resources */,
+				D9893AB6155985040085012A /* SMSColorPalette~ipad.png in Resources */,
+				D9893AB7155985040085012A /* SMSColorSlider.png in Resources */,
+				D9893AB8155985040085012A /* SMSColorSlider@2x.png in Resources */,
+				D9893AB9155985040085012A /* SMSColorSlider@2x~ipad.png in Resources */,
+				D9893ABA155985040085012A /* SMSColorSlider~ipad.png in Resources */,
+				D9893ABB155985040085012A /* SMSIncomingTextBubble.png in Resources */,
+				D9893ABC155985040085012A /* SMSIncomingTextBubble@2x.png in Resources */,
+				D9893ABD155985040085012A /* SMSLineSlider.png in Resources */,
+				D9893ABE155985040085012A /* SMSLineSlider@2x.png in Resources */,
+				D9893ABF155985040085012A /* SMSLineSlider@2x~ipad.png in Resources */,
+				D9893AC0155985040085012A /* SMSLineSlider~ipad.png in Resources */,
+				D9893AC1155985040085012A /* SMSOutgoingTextBubble.png in Resources */,
+				D9893AC2155985040085012A /* SMSOutgoingTextBubble@2x.png in Resources */,
+				D9893AC3155985040085012A /* SMSSendButton.png in Resources */,
+				D9893AC4155985040085012A /* SMSSendButton@2x.png in Resources */,
+				D9893AC5155985040085012A /* SMSSliderThumb.png in Resources */,
+				D9893AC6155985040085012A /* SMSSliderThumb@2x.png in Resources */,
+				D9893AC7155985040085012A /* SMSSliderThumb~ipad.png in Resources */,
+				D9893AC8155985040085012A /* SMSUndo.png in Resources */,
+				D9893AC9155985040085012A /* SMSUndo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
