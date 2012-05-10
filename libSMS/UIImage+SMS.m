@@ -46,6 +46,8 @@
 	return result;
 }*/
 
+#ifdef TARGET_iOS
+
 - (UIImage *)resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds
                     interpolationQuality:(CGInterpolationQuality)quality
@@ -82,16 +84,65 @@
     [self drawInRect:newRect];
     
     CGImageRef newImageRef = CGBitmapContextCreateImage(context);
-#ifdef TARGET_iOS
     UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:scale orientation:self.imageOrientation];
-#else
-    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
-#endif
     
     UIGraphicsEndImageContext();
     CGImageRelease(newImageRef);
     
     return newImage;
 }
+
+#else
+
+- (UIImage *)resizedImageWithContentMode:(UIViewContentMode)contentMode
+                                  bounds:(CGSize)bounds
+                    interpolationQuality:(CGInterpolationQuality)quality
+{
+    CGFloat horizontalRatio = bounds.width / self.size.width;
+    CGFloat verticalRatio = bounds.height / self.size.height;
+    
+    CGFloat ratio;
+    switch (contentMode) {
+        case UIViewContentModeScaleAspectFill:
+            ratio = MAX(horizontalRatio, verticalRatio);
+            break;
+            
+        case UIViewContentModeScaleAspectFit:
+            ratio = MIN(horizontalRatio, verticalRatio);
+            break;
+            
+        case UIViewContentModeScaleToFill:
+            ratio = 1.0;
+            break;
+            
+        default:
+            [NSException raise:NSInvalidArgumentException format:@"UIImage+SMS: unsupported content mode = %d", contentMode];
+    }
+    
+    CGSize newSize = CGSizeMake(self.size.width*ratio, self.size.height*ratio);    
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGRect newRect = CGRectIntegral(CGRectMake(0, 0, newSize.width*scale, newSize.height*scale));
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef ctx = CGBitmapContextCreate(NULL, newRect.size.width, newRect.size.height, 8, 4*newRect.size.width, colorSpace, kCGImageAlphaPremultipliedFirst);
+    CGColorSpaceRelease(colorSpace);
+    
+    CGContextConcatCTM(ctx, CGAffineTransformMake(1, 0, 0, -1, 0, newRect.size.height));
+    CGContextSetInterpolationQuality(ctx, quality);
+    
+    [NSGraphicsContext setCurrentContext:[NSGraphicsContext graphicsContextWithGraphicsPort:(void *)ctx flipped:YES]];
+    
+    [self drawInRect:newRect];
+    
+    CGImageRef newImageRef = CGBitmapContextCreateImage(ctx);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
+    
+    CGContextRelease(ctx);
+    CGImageRelease(newImageRef);
+    
+    return newImage;
+}
+
+#endif
 
 @end
